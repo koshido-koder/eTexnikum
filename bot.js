@@ -1,6 +1,6 @@
 const http = require("http");
 
-const BOT_TOKEN = "PASTE_YOUR_BOT_TOKEN_HERE";
+const BOT_TOKEN = "8955872735:AAFWCOAF6Fhk_tCIGkW5Uz2exwvxyA0R12Q";
 const PORT = 3000;
 
 const ADMIN_IDS = [];
