@@ -1,0 +1,643 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel=icon href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAM0ElEQVR4nO2dW3BV13nHf99a+1x0RZIZ22AEWDiMDW5BsUMwMhAILWlLQUBcz9R5cR9M7Gk8ZPzet870JRMm6SSlnWk7LX7w2AhEQsb12AZswHYSC6gdG6i5isvEMBKS0O2cvdfXh60DQkg6OpLODc5vRjPSPvvsvfT91/qvb++191rClFGZ13z+cVXXpCLL0eBJVTcXtFYgBsjUz5FXVGEQpFPEXETs56L6sYg5cmHv/JMgOpWDTzo4szddqreS2IIGW4ClIqYaBNShuLDYTKlsBYSACIIBMYCi6rqB44htCTTacqV1Tvskj5wZ9c0XFoj6P1LcC2KiM9EAVR/UTeb8xYsYRDwQi7rEdcG8ruL9vH3vvDMZHWaiO87acLncswPbEX4s4s1UlwANMi/4vYhYxERR9a+j/NQP4juu/vqRvgl9dSI7zdt4utEZ+88i3opS4MfhthBHjQv+/sK+hcfSfiXdDvWbzj4vuF9gbJ0Gg9NT0HscsTFwQYdiXmlvbXhjvH3NeB/O3fjVq4juUigFPwM0GEShDtFdczd+9ep4+47ZAuZu/OpVDDtUndx3Hex0IQYRozi2X9z32M9G3WW0jfWb/u95xOxCA68U/CkiBsT6qPtBe+s37rKjuwR4ZPPZJdYFBxSpRf3cFPJeRzwE7QyMXXN5T8OJ4R/d0QfM2nC53Dh/J8YrBX86UR+MV2ucv3PWhsvlwz+6QwDP9m0XE/t2qcOdfjQYREzs257t2z58+y0LmvvX5x9VSfwekbpSnp8lxIJqh2j06Yu/mn8OhrUANYntYmOl4GcTDRAbq1OT2J7aJABz/uriI2L7/xcxJQGyjVhQ16FB2Z9e2j/3sgFQO/B9sfFS8HOBBoiN16kd+D6A4Tm1AltLwc8hGiCwlefUmnnJ0wsFbdRS2pkzVH0EbZyXPL3QqJomMV5l6Yo3h6hDjFepapqM4lYU66ih6tDAW1EiKG6FQWVxsdV+VRhM3o78YEKLTwh1oLLYU7QeikMAVUgkFc8K32ms4OWtdYjAL1s6+PB4H35SiUYEKYIGrTgUrfeA2kJvAbcDD6u/Wc4PNz/AmqcqbgV61dIKDh3r5V/2dPDh8V78JIUvhDpAaqV+40lHgXYCqcBbC88uqWDb5lrWPlU5ZmAVOPhpLzv3DgnhF7wQKvUbTxacew63mqYl5WkDPxoH2nrZuWfImvzCtaaCEmC41TQtudtqJnO8O6ypAFtEQQiQqdVkfHwK15ryKsB0WE2mFJo15UWA6baayZy/UKwppwJk22oyLg/5t6acCJAPq8mUfFlTVgXIt9VkSj6sKSsCFJrVZEourWlaBSgGq8mUbFvTtAhQbFaTKdm0pikJUOxWkynZsKZJCXAvWk2mTJc1ZSTAvW41mTId1jQhAe43q8mUqVhTWgFUwbPCssVlvNRcCnw6DrT18q97OvjkD/0kfU0bq7QCBE55qbmOf/i7B0uBz4B//M9r/HJ3R/h6wDj7eekOZET4r9/c4PTFBC8117K6sWIai1n8JFyS7kTfrcr5xWnh33Z3c+SzcFu6OptRHxDxYFVjJds2l4RI8eEf23jx4D8RNRY1AT3v/C3Jc08SjQcTcoy0LQBABGJRQRXe+91NPjjWy6rGcn64uY5V97kQX7b38fVAJ1HjgfGJGZ9Y1IBM7FHPCQmQ4k4hevngWB+rGivuyxZx+EQfO9/q5uC168RXWkTDaQwkw+cbMhIgxd0t4uZ9Y02HT/Syc08nB9t6GRzwiMwP4zHZaTEmJUCK+8ma7gh8UolFhHhUcFPMDKckQIp72ZoOn+hj554ODrT1khgW+OliWgRIcS9Z01g1frqZVgFSFLM15SrwKbIiQIpisqZsW81YZFWAFIEL76CKFJ41jVbjIzZV5ntAgMDB4/Pj9PY7zl0ZxLOCiOTdmkYLvGdhMOmYPytGVYXh1PlBzLjzyUydrAuQ9B2rn6rib9bVsO+DLloPdXH2UviPhS0it9Y0mtVYAwlfaZgdZePqGjatnsHeQ1189tUfiUezq0BOLMj3lRmVlhe+V8eGlTUc/LSHlvdv8MXZ/vAiJgfWNLLGRyOCEfAD5YlH42xeU8Oap6upqTRYA0k/N8+r5UQAAOdgIAFlUcOmVTP4s2XVfPTZTXa/30nbyb6h24bTb013Bd4bGihR5elF5WxdW8uKJZVUxIVEMixjPDod//HEyJkAKZyG/6S1wtpvVbGysYq2k73sfu8GH312k4QfXtVP1ZqGW00yqXheeJfGWmhaUsnW79by1BMVRCPcCnw+yLkAKVRhMBH2A8sWV/CtRRX84ewALe93cqith66bblIXdCNrfMSGgpbFhFXPVLN1TQ2LF5RhDCT9sAz5JG8CpAjHGsLfFzfE+ZMFszhzqY7WQzd45+Nurt3wcZremkYG3rMAyowqj3XLqmn+Tg2P1cdQDQNPgUwMkHcBhpMcell//uwYr/3gIZ7/8zr2H+5i/+EuLn+dJHDKu8Os6ZWtdZihtyRTWY0dSloeqovwl03VbFhZw5yHIgTBbaELiYISIIUfhD8PPRBh29aZbFlbyzsfd9F66AZnLyXwA+Xd393k8IleBOhPKCacXZj5s8JUcv0z1TxY52XfZlTG/zsNBSlAiiAIf26lsM/WcLCth5b3O/ny7MCtl7Wt4c5UssqQTMJAtif+ch5ERpwkMhhutxNrbgUtQIpbKWzszhT2zXc7cQ6eWzcilczFjGvOI2g4SvDNFtAh31OL39iCFYc9txxM+glQikKAFHeksE9X0bSkCoBYBBJ+DlPJwMM9fAp/+X+DCcDZcLsKGu/BX/Y6MlCNubII7PgiZPlOR3YI54oIPV8k/D2nc0UYR/D4e2ATt4Ofwlmwfvi5ST8DQVEKkCIvs6WogWgvWnMl9PrRcBadcQWN9dy2pzEoagHyhsCERuEnkBDlRIBifKRxzDKLg8EKpGt26P+jYQKkexYyUBXuPw45EcAPlGgEIl5hiyESljEagSAYp4arwZ5cC4F3twgmAOdhT34XXPrwZj0LikYM+w510d0bsH75DBY1lBGPhle9QYHMkmMMRL2wM//8TD//81E3B37fQzQyRgCNj7m6CO+3LxAs3YOWd936SPqrscebMVcWp82AIEfvCTsHCd8RjxqeXFDG+meqeXZpJQ/WeTgXXvXmujMVAc+Gwb/WGXDkRA9vH+3m8zP99A86op5JPxoWRNCqa7iHv0ArbiB9NZirTyA9D074Qiznb8r7geIcPPyAx8rGStavmMGiR8uIRXLTKobX9pPnw9r+QdtNrl5PDllQhq8aqQmzISXsdI2f1veHk7cJmwKnJH3NSatIV9sjnmBNXjonlTkbT/ULGs/H2WFEq5jpsbKxivXLq1nUMPVWMXpt7+HqdR8xELH5nSlFkQGZs/HUFRGZVQjzxg1vFYsXlPG9SbSKVG23Br7uDDhy4iZvH+0qhNo+oqAGVb3qCdIumFlaADMnWiPYoQe5jp/qo+3Lvtt9xTPjZ1CjZTK3vH2otmf7CYdMEAzg2qV+06l/F4m8qC7PY3NjkK6vgIL09rSE640l/8MTzFHQF/NdoLEY3iqOnerj02Gt4i+aZiAivH20665MppBq++gogjkq85pPPeEcv0WkaOaPTrWK8ngY5L6Bwq7tdyEGVG8awzJzIbLwtCLHRIpnaMCasIanRsziUVM8wQdEPBQ5diGy8LThTQkUdiM2/TcLjNR4QNEhFoXdvCmBAZAg/pYGAx3FKELRIRYNBjokiL8FQ3dDL+2fexmRXWJy+EzefYqYKIjsurR/7mUYdjtaXHSHBoOlVpBNxKLBYIe46I7UplsCXPzV/HOI/KTUCrLHUO3/SWoNMRgxIOMH5TvUDX4iNpb70t3jiI2hbvATPyjfMXz7HQJc/fUjfc5423B+J0WUlhY84oHzO53xto1c6vyuy8XLexpOKLyMSHjLsMTUEAMivsLLI1dShTHGhNtbv/GGOH1NxGhJhCkwtKCzOH1ttLWEYZxB+Yv7HvsZju2I9Ut2NAnECxdyHmc1bZjASFj9prPPC+4XGFtaV36CiI2BCzoU80p7a8OoNT9FWn9pb214Q9StU3VHxZZRuk4YB7GILUPVHRV169IFHzIYC5614XK5Zwe2I/xYxJupLkFp/ckhxA7d3/evo/zUD+I7RmY7Y34103PVN19YIOr/SHEviInORANUfYrlVva0IQYJfR51ieuCeV3F+3n73nlnMjrMZM8/e9OleiuJLWiwBVgqYqpBQB2KGxq8zfvyNNNEeNtVCGfFAkXVdQPHEdsSaLTlSuuc9kkeeaqozGs+/7iqa1KR5WjwpKqbC1orEJuec+QVVRgE6RQxFxH7uah+LGKOXNg7/yTIlGrZ/wPdWFoBFkBRdQAAAABJRU5ErkJggg=="><link rel=manifest href=manifest.webmanifest><meta name=theme-color content="#1d4ed8"><link rel=apple-touch-icon href=icon-192.png><title>eTexnikum — elektron kundalik</title>
+<style>
+:root{box-sizing:border-box;--bg:#f4f6fb;--cd:#fff;--tx:#0f172a;--mu:#64748b;--bd:#e2e8f0;--pr:#1d4ed8;--ok:#16a34a;--no:#dc2626;--wa:#d97706;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--cd:#121c33;--tx:#e8eefb;--mu:#98a6c3;--bd:#22304f;--pr:#5b8cff}}
+:root[data-theme="dark"]{--bg:#0b1220;--cd:#121c33;--tx:#e8eefb;--mu:#98a6c3;--bd:#22304f;--pr:#5b8cff}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 18px;background:var(--cd);border-bottom:1px solid var(--bd);flex-wrap:wrap}
+.lg{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700}.lg i{color:var(--ok);font-style:normal}
+main{max-width:980px;margin:0 auto;padding:18px}
+.card{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:14px}
+h3{margin:0 0 10px;font-size:16px}.mu{color:var(--mu)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-bottom:14px}.grid .card{margin:0}
+.st{text-align:center}.st b{display:block;font-size:28px;color:var(--pr)}.st span{color:var(--mu);font-size:13px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+input,select,textarea,button{font:inherit;padding:8px 11px;border:1px solid var(--bd);border-radius:9px;background:var(--bg);color:var(--tx)}
+textarea{width:100%;min-height:90px}button{cursor:pointer}.pr{background:var(--pr);color:#fff;border-color:var(--pr)}
+nav{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}nav button.on{background:var(--pr);color:#fff;border-color:var(--pr)}
+.sc{overflow-x:auto}table{width:100%;border-collapse:collapse}th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);white-space:nowrap}th{color:var(--mu);font-size:13px;font-weight:600}
+.ch{display:inline-block;padding:2px 9px;border-radius:99px;background:var(--bg);border:1px solid var(--bd);font-size:12px;margin:2px}
+.sb.p.on{background:var(--ok);color:#fff}.sb.a.on{background:var(--no);color:#fff}.sb.l.on{background:var(--wa);color:#fff}
+.rep{border-top:1px solid var(--bd);padding:8px 0}.rep p{margin:4px 0 0}
+.lw{max-width:400px;margin:30px auto;text-align:center}.lw input{width:100%;margin-bottom:8px}.er{color:var(--no);min-height:22px}.tg.on{background:var(--pr);color:#fff;border-color:var(--pr)}.cg{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}.dc{width:100%;padding:6px 0}.dc.p{background:var(--ok);color:#fff}.dc.a{background:var(--no);color:#fff}.dc.l{background:var(--wa);color:#fff}.dc.h{border-color:var(--pr)}.dc.on{outline:2px solid var(--pr)}#ms{max-height:340px;overflow:auto;margin-bottom:8px}.m{padding:6px 0;border-top:1px solid var(--bd)}.m img{max-width:240px;max-height:200px;border-radius:8px;display:block}.m audio{width:100%;max-width:300px}footer{text-align:center;padding:16px;color:var(--mu);font-size:13px}a{color:var(--pr)}.lk a{margin:0 6px}
+
+button{position:relative;overflow:hidden;transition:transform .15s,box-shadow .2s,filter .2s}
+button:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 6px 14px -6px rgba(29,78,216,.55);filter:brightness(1.06)}
+button:active:not(:disabled){transform:scale(.95);box-shadow:none}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--pr);outline-offset:2px}
+input,select,textarea{transition:border-color .2s,box-shadow .2s}input:focus,select:focus,textarea:focus{border-color:var(--pr);box-shadow:0 0 0 3px rgba(29,78,216,.15)}
+.rp{position:absolute;border-radius:50%;background:currentColor;opacity:.28;transform:scale(0);animation:rp .6s ease-out forwards;pointer-events:none}@keyframes rp{to{transform:scale(1);opacity:0}}
+.ic{width:20px;height:20px;margin-right:6px;transition:transform .25s}.lk{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}.lk a{display:inline-flex;align-items:center;margin:0;text-decoration:none;font-weight:600}.lk a:hover .ic{transform:scale(1.25) rotate(-8deg)}
+.br{display:grid;grid-template-columns:84px 1fr 46px;gap:8px;align-items:center;margin:7px 0}.br>div{height:12px;border-radius:9px;background:var(--bd);overflow:hidden}.br i{display:block;height:100%;border-radius:9px;background:var(--pr);transform-origin:left;animation:bar .9s cubic-bezier(.2,.8,.2,1) both}.br b{text-align:right;font-size:13px}@keyframes bar{from{transform:scaleX(0)}}
+.tl polyline{stroke-dasharray:1;animation:dr 1.2s ease forwards}@keyframes dr{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+.sw{background:rgba(217,119,6,.14);border-radius:8px;padding:2px 6px}
+.tt{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--tx);color:var(--bg);padding:10px 16px;border-radius:12px;z-index:9;animation:tt .3s both}@keyframes tt{from{opacity:0;transform:translate(-50%,10px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.dgb{padding:3px 9px;color:var(--no);border-color:transparent;background:none;font-size:13px}.dgb:hover:not(:disabled){background:rgba(220,38,38,.12);box-shadow:none;filter:none}.dg{background:var(--no)!important;color:#fff!important}
+.ad{display:flex;gap:12px;align-items:center;padding:10px 12px;border:1px dashed var(--bd);border-radius:14px;margin-bottom:14px;background:var(--cd);color:var(--tx);text-decoration:none;transition:transform .2s,border-color .2s}.ad:hover{transform:translateY(-2px);border-color:var(--pr)}.ad img{width:72px;height:72px;object-fit:cover;border-radius:10px}.ad div{display:flex;flex-direction:column;min-width:0}.ad small{font-size:11px}
+#fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:56px;height:56px;border-radius:50%;padding:0;display:flex;align-items:center;justify-content:center;overflow:visible;box-shadow:0 8px 24px -6px rgba(29,78,216,.6);z-index:20}#fab svg{width:26px;height:26px}#fab .rp{display:none}#fab i{position:absolute;top:-4px;right:-4px;min-width:20px;padding:4px 5px;border-radius:99px;background:var(--no);color:#fff;font:700 12px/1 system-ui;text-align:center;animation:pop .3s}@keyframes pop{from{transform:scale(0)}}
+.mg{position:fixed;inset:0;z-index:30;display:grid;grid-template-columns:320px 1fr;background:var(--bg);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);animation:mgi .25s ease-out}@keyframes mgi{from{opacity:0;transform:translateY(24px)}}
+.ml,.mc{display:flex;flex-direction:column;min-height:0;min-width:0;background:var(--cd)}.ml{border-right:1px solid var(--bd)}.mc{background:var(--bg)}
+.mh{display:flex;align-items:center;gap:10px;padding:8px 12px;min-height:58px;background:var(--cd);border-bottom:1px solid var(--bd)}.mh>div{flex:1;min-width:0}.mh small{display:block;color:var(--mu)}.mh button{border:0;background:none;padding:6px 10px;font-size:20px}.bk{display:none}
+.mls{flex:1;overflow:auto}.mi{display:flex;gap:12px;align-items:center;padding:10px 14px;cursor:pointer;transition:background .15s}.mi:hover,.mi.on{background:var(--bg)}.mi>div{flex:1;min-width:0}.mi small{display:block;color:var(--mu);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mi em{background:var(--pr);color:#fff;font:700 12px/1 system-ui;padding:4px 7px;border-radius:99px;animation:pop .3s}
+.av{width:44px;height:44px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font:700 16px system-ui}.mh .av{width:38px;height:38px;font-size:14px}
+.mb{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:4px}.em{margin:auto;color:var(--mu)}
+.bb{align-self:flex-start;max-width:min(80%,480px);padding:6px 11px 4px;background:var(--cd);border:1px solid var(--bd);border-radius:16px 16px 16px 4px;word-break:break-word;cursor:pointer;animation:bi .2s ease-out}.bb.me{align-self:flex-end;background:var(--pr);border-color:var(--pr);color:#fff;border-radius:16px 16px 4px 16px}@keyframes bi{from{opacity:0;transform:translateY(6px) scale(.97)}}
+.bb b{display:block;font-size:13px}.bb small{display:block;text-align:right;font-size:11px;opacity:.7}.bb img{max-width:100%;border-radius:10px;display:block}.bb a{color:inherit}.xd{display:none;cursor:pointer;margin-left:6px}.bb.sel .xd,.bb:hover .xd{display:inline}.bb .dg{padding:0 6px;border-radius:6px}
+.dd{align-self:center;margin:8px 0;padding:2px 10px;border-radius:99px;background:var(--bd);color:var(--mu);font-size:12px}
+.mf{display:flex;gap:8px;align-items:center;padding:8px 10px;background:var(--cd);border-top:1px solid var(--bd)}.mf #mt{flex:1;min-width:0;border-radius:99px;padding:10px 14px}.at{cursor:pointer;font-size:20px;padding:4px 6px}.at .ic,label.tg .ic{margin:0;vertical-align:middle}.sd{width:42px;height:42px;border-radius:50%;padding:0;display:flex;align-items:center;justify-content:center}.sd svg{width:20px;height:20px}
+@media(max-width:719px){.mg{grid-template-columns:1fr}.mg .mc{display:none}.mg.op .ml{display:none}.mg.op .mc{display:flex}.mg.op .bk{display:inline-block}}
+
+.sb.e.on,.dc.e{background:#7c3aed;color:#fff}
+.q{border-left:3px solid currentColor;padding:2px 8px;margin-bottom:4px;opacity:.8;font-size:13px}.rb,.pn{padding:6px 12px;background:var(--cd);border-top:1px solid var(--bd);font-size:13px;display:flex;justify-content:space-between;gap:8px}.sq{width:90px;border-radius:99px;padding:6px 10px}
+@media print{header,nav,#fab,footer,.ad,button,.dgb{display:none!important}body{background:#fff}}
+
+#ld{position:fixed;inset:0;z-index:99;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:var(--bg);font:700 22px system-ui;color:var(--tx);transition:opacity .4s}#ld.out{opacity:0;pointer-events:none}#ld i{color:var(--ok);font-style:normal}.sp{width:38px;height:38px;border-radius:50%;border:4px solid var(--bd);border-top-color:var(--pr);animation:spn .8s linear infinite}@keyframes spn{to{transform:rotate(360deg)}}
+#pb{position:fixed;left:0;right:0;top:0;height:3px;z-index:98;transition:opacity .3s}#pb.out{opacity:0}#pb i{display:block;height:100%;background:var(--pr);transform-origin:left;animation:pbf 2s linear both}@keyframes pbf{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+#cdp{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:98;background:var(--tx);color:var(--bg);padding:9px;border-radius:99px;display:flex;transition:opacity .3s;animation:tt .25s both}#cdp svg{width:22px;height:22px;animation:spn .6s linear infinite}#cdp.out{opacity:0}#cdp.nd{animation:nd .35s}@keyframes nd{25%{transform:translateX(calc(-50% - 6px))}75%{transform:translateX(calc(-50% + 6px))}}
+body.cdw nav button:not(.on){opacity:.5;cursor:progress}
+@keyframes fu{from{opacity:0;transform:translateY(10px)}}main.fi>*{animation:fu .45s both}main.fi>*:nth-child(2){animation-delay:.06s}main.fi>*:nth-child(3){animation-delay:.12s}main.fi>*:nth-child(4){animation-delay:.18s}main.fi>*:nth-child(n+5){animation-delay:.24s}
+main.ld .card{position:relative;overflow:hidden}main.ld .card::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(127,127,127,.2),transparent);transform:translateX(-100%);animation:shm .9s ease .1s both}@keyframes shm{to{transform:translateX(100%)}}
+.shk{animation:shk .35s;border-color:var(--no)!important}@keyframes shk{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+#clk{font-variant-numeric:tabular-nums;font-size:13px}
+nav button,.row>button,.tg{display:inline-flex;align-items:center}button .ic{width:16px;height:16px;margin-right:6px}.ic.o,button .ic.o{margin:0}.ch .ic{width:12px;height:12px;margin-right:4px;vertical-align:-2px}.tt{display:flex;align-items:center}.tt .ic{width:16px;height:16px;margin-right:6px}.xd .ic,.pn .ic,.rb .ic{width:14px;height:14px;margin:0;vertical-align:-2px}.dgb .ic{width:12px;height:12px}.mh .bk .ic{width:22px;height:22px}
+
+.av{position:relative}.od{position:absolute;right:-1px;bottom:-1px;width:12px;height:12px;border-radius:50%;background:#22c55e;border:2px solid var(--cd);text-decoration:none}.mh .od{width:10px;height:10px}
+.ps{display:inline-flex;align-items:center;gap:5px;color:var(--mu)}.ps u{width:8px;height:8px;border-radius:50%;background:var(--mu);text-decoration:none}.ps.on{color:var(--ok)}.ps.on u{background:#22c55e}
+.rc{display:inline-flex;vertical-align:middle;margin-left:4px;opacity:.65}.rc.rd{opacity:1;color:#7dd3fc}.rc .ic{width:15px;height:15px}
+#hm{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.45);display:flex;align-items:flex-end;justify-content:center;animation:fo .2s}@keyframes fo{from{opacity:0}}
+.hs{width:100%;max-width:560px;max-height:82vh;background:var(--cd);border-radius:18px 18px 0 0;display:flex;flex-direction:column;animation:fu .3s both}
+.hh{display:flex;justify-content:space-between;align-items:center;padding:10px 12px 10px 16px;border-bottom:1px solid var(--bd)}.hh b{display:flex;align-items:center}.hh b .ic{margin-right:8px;color:var(--pr)}.hbd{overflow:auto;padding:10px 12px 18px}
+.hbd details,.hp{border:1px solid var(--bd);border-radius:12px;padding:8px 12px;margin-bottom:8px;background:var(--cd)}
+details summary{cursor:pointer;font-weight:600;display:flex;align-items:center;list-style:none}details summary::-webkit-details-marker{display:none}summary .ic{width:16px;height:16px;margin-right:8px;color:var(--pr)}details p{margin:8px 0 2px;color:var(--mu);font-size:14px}
+.hp{padding:6px 12px}.hp summary{font-size:13px;font-weight:500;color:var(--mu)}
+
+.lw form{display:grid;gap:8px;text-align:left}.lw form input{width:100%;box-sizing:border-box}.pwf{position:relative}.lw form input,.pwf input{margin:0}.pwf input{display:block;width:100%;box-sizing:border-box;padding-right:46px}.pwf .eye{position:absolute;right:3px;top:0;bottom:0;margin:auto 0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;padding:0;border:0;background:none;color:var(--mu);cursor:pointer}.pwf .eye .ic{width:20px;height:20px;margin:0}.fp{margin:-2px 2px 2px;text-align:right;font-size:13px}.fp a{color:var(--pr);text-decoration:none}.fps{margin:0;padding-left:20px;display:grid;gap:6px}
+.pwf .eye:hover:not(:disabled),.pwf .eye:active:not(:disabled){transform:none;box-shadow:none;filter:none;background:none}.pwf .eye .rp{display:none}.pwf .eye:active .ic{opacity:.55}input::-ms-reveal,input::-ms-clear{display:none}
+
+/* ===== Integrated eTexnikum landing screen ===== */
+.home-screen{min-height:calc(100vh - 1px);background:#f7faff;color:#102044}
+.home-screen *{box-sizing:border-box}
+.home-wrap{width:min(1180px,calc(100% - 32px));margin:auto}
+.home-nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 0}
+.home-brand{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:800}
+.home-brand .logo{width:44px;height:44px;border-radius:13px;background:#2453d8;display:grid;place-items:center;box-shadow:0 8px 20px rgba(36,83,216,.22)}
+.home-brand .e{color:#18a957}.home-brand .t{color:#10265f}
+.home-links{display:flex;gap:22px;color:#4d5c76;font-size:14px;font-weight:700}
+.home-links a{color:inherit;text-decoration:none}.home-links a:hover{color:#2453d8}
+.home-login{padding:11px 18px;border-radius:12px;background:#2453d8;color:#fff;font-weight:800;border:0;cursor:pointer}
+.home-hero{padding:70px 0 55px;background:radial-gradient(circle at 85% 20%,rgba(36,83,216,.14),transparent 32%),radial-gradient(circle at 15% 75%,rgba(24,169,87,.09),transparent 25%),linear-gradient(180deg,#fff 0%,#f7faff 100%)}
+.home-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:48px}
+.home-kicker{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:999px;background:#eaf1ff;color:#2453d8;font-size:13px;font-weight:800;margin-bottom:18px}
+.home-kicker:before{content:"";width:8px;height:8px;border-radius:50%;background:#18a957;box-shadow:0 0 0 5px rgba(24,169,87,.12)}
+.home-title{font-size:clamp(44px,6vw,72px);line-height:.98;letter-spacing:-4px;margin:0 0 22px}
+.home-title .g{color:#18a957}.home-title .b{color:#2453d8}
+.home-desc{max-width:620px;font-size:18px;color:#66728a;margin:0 0 28px}
+.home-actions{display:flex;gap:12px;flex-wrap:wrap}.home-primary,.home-secondary{min-height:50px;padding:0 20px;border-radius:13px;display:inline-flex;align-items:center;justify-content:center;font-weight:800;cursor:pointer}
+.home-primary{background:#2453d8;color:#fff;border:0}.home-secondary{background:#fff;color:#102044;border:1px solid #e2e9f5}
+.home-preview{background:#fff;border:1px solid #dce6f6;border-radius:22px;box-shadow:0 30px 70px rgba(28,62,130,.16);overflow:hidden;transform:rotate(1deg)}
+.home-preview-top{height:48px;display:flex;align-items:center;gap:7px;padding:0 15px;border-bottom:1px solid #edf1f7}
+.home-dot{width:8px;height:8px;border-radius:50%;background:#dce4f1}.home-preview-title{font-size:11px;font-weight:800;color:#10265f;margin-left:6px}
+.home-preview-body{display:grid;grid-template-columns:130px 1fr;min-height:330px}
+.home-side{padding:15px 10px;background:#f7f9fe;border-right:1px solid #edf1f7}.home-side div{padding:9px;border-radius:9px;color:#66728a;font-size:10px;font-weight:700;margin-bottom:4px}.home-side .on{background:#2453d8;color:#fff}
+.home-content{padding:17px}.home-welcome{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px}.home-avatar{width:28px;height:28px;border-radius:50%;background:#eaf1ff}
+.home-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-bottom:12px}.home-stat{padding:10px;border:1px solid #e9eef7;border-radius:11px;background:#fbfcff}.home-stat small{display:block;color:#8290a7;font-size:8px}.home-stat strong{font-size:17px}.home-stat b{display:block;color:#18a957;font-size:8px}
+.home-chart{height:125px;padding:13px;border:1px solid #e9eef7;border-radius:12px;background:#fbfcff}.home-bars{height:75px;display:flex;align-items:end;justify-content:space-around;gap:7px}.home-bar{width:9%;border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,#4c78ed,#2453d8)}
+.home-features{padding:55px 0;background:#fff;border-top:1px solid #edf1f7;border-bottom:1px solid #edf1f7}
+.home-head{max-width:680px;margin-bottom:28px}.home-k2{color:#2453d8;font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px}.home-h2{font-size:clamp(30px,4vw,44px);line-height:1.08;letter-spacing:-2px;margin:0 0 10px}.home-muted{color:#66728a}
+.home-feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.home-feature{padding:22px;background:#fff;border:1px solid #e2e9f5;border-radius:18px}.home-feature h3{margin:0 0 6px;font-size:17px}.home-feature p{margin:0;color:#66728a;font-size:13px}
+.home-roles{padding:55px 0;background:linear-gradient(180deg,#f7faff,#eef4ff)}.home-role-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.home-role{padding:20px;background:#fff;border:1px solid #dfe8f8;border-radius:17px;text-align:center}.home-role h3{margin:8px 0 0;font-size:15px}.home-role p{margin:4px 0 0;color:#66728a;font-size:11px}
+.home-cta{margin:45px 0;padding:40px;border-radius:25px;color:#fff;background:linear-gradient(135deg,#123a9e,#2453d8);box-shadow:0 25px 60px rgba(36,83,216,.22)}.home-cta h2{font-size:clamp(30px,4vw,46px);line-height:1.05;margin:0 0 10px}.home-cta p{max-width:620px;color:rgba(255,255,255,.8);margin:0 0 20px}.home-cta .home-primary{background:#fff;color:#2453d8}
+.home-footer{padding:25px 0 35px;color:#8493b1;font-size:12px;text-align:center}
+.home-camera{color:#2453d8;font-weight:800}
+.bio-btn{width:100%;margin-top:8px;background:linear-gradient(135deg,#0f172a,#334155)!important;color:#fff!important;border-color:#334155!important}
+.bio-msg{display:block;min-height:20px;margin-top:7px;font-size:12px;color:var(--mu)}
+.cam-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:14px}
+.cam-box{position:relative;background:#050914;border-radius:14px;overflow:hidden;min-height:300px;display:grid;place-items:center}
+.cam-box video{width:100%;height:100%;min-height:300px;object-fit:cover;transform:scaleX(-1)}
+.cam-placeholder{position:absolute;inset:0;display:grid;place-items:center;color:#98a6c3;padding:25px;text-align:center;pointer-events:none}
+.cam-shot{width:100%;max-height:320px;object-fit:cover;border-radius:12px;margin-top:10px;display:none}
+.ai-card{border:1px solid var(--bd);border-radius:14px;padding:13px;background:var(--cd)}
+.ai-row{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--bd)}.ai-row:last-child{border-bottom:0}
+.ai-note{font-size:12px;color:var(--mu);margin-top:10px}
+@media(max-width:850px){.home-grid{grid-template-columns:1fr}.home-preview{transform:none}.home-feature-grid{grid-template-columns:1fr 1fr}.home-role-grid{grid-template-columns:1fr 1fr}.cam-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.home-links{display:none}.home-hero{padding:45px 0}.home-title{letter-spacing:-2.5px}.home-actions{display:grid}.home-primary,.home-secondary,.home-login{width:100%}.home-preview-body{grid-template-columns:92px 1fr}.home-side{padding:10px 7px}.home-side div{font-size:8px;padding:7px}.home-content{padding:10px}.home-stats{grid-template-columns:repeat(2,1fr)}.home-feature-grid,.home-role-grid{grid-template-columns:1fr}.home-cta{padding:28px 22px}}
+
+</style></head><body><div id="ld"><div class="lg"><svg width="34" height="34" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#1d4ed8"/><path d="M32 14 6 27l26 13 26-13z" fill="#fff"/><path d="M17 35l15 7 15-7v11l-15 6-15-6z" fill="#dbe6ff"/></svg><span><i>e</i>Texnikum</span></div><div class="sp"></div></div><div id="app"></div><script>
+const PC='<svg class=ic viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>';
+const SVP={"eye": "<path d=\"M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/>", "eyeoff": "<path d=\"M3 3l18 18\"/><path d=\"M10.6 5.1A10.9 10.9 0 0 1 12 5c6.4 0 10 7 10 7a17 17 0 0 1-3.2 4.1M6.6 6.6A17 17 0 0 0 2 12s3.6 7 10 7a10 10 0 0 0 4.4-1\"/><path d=\"M9.9 9.9a3 3 0 0 0 4.2 4.2\"/>","overview": "<path d=\"M3 11l9-8 9 8\"/><path d=\"M5 10v10h14V10\"/>", "dash": "<path d=\"M18 20V10M12 20V4M6 20v-6\"/>", "req": "<path d=\"M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z\"/><path d=\"M14 3v6h6M8 13h8M8 17h5\"/>", "staff": "<circle cx=\"9\" cy=\"8\" r=\"3.5\"/><path d=\"M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.2a6.5 6.5 0 0 1 3.5 5.8\"/>", "sched": "<rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 10h18M8 3v4M16 3v4\"/>", "news": "<path d=\"M6 9a6 6 0 0 1 12 0c0 6 2 7 2 7H4s2-1 2-7\"/><path d=\"M10 20a2 2 0 0 0 4 0\"/>", "prof": "<circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M4 21a8 8 0 0 1 16 0\"/>", "att": "<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"3\"/><path d=\"M8 12l3 3 5-6\"/>", "students": "<circle cx=\"12\" cy=\"8\" r=\"3.5\"/><path d=\"M5 20a7 7 0 0 1 14 0\"/>", "report": "<rect x=\"5\" y=\"4\" width=\"14\" height=\"17\" rx=\"2\"/><path d=\"M9 4V3h6v1M9 11h6M9 15h4\"/>", "grades": "<path d=\"M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z\"/>", "hw": "<path d=\"M12 20h9\"/><path d=\"M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z\"/>", "lib": "<path d=\"M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"/>", "techs": "<path d=\"M3 21h18M5 21V7l7-4 7 4v14\"/><path d=\"M9 21v-6h6v6M9 10h2M13 10h2\"/>", "ads": "<path d=\"M3 11v2a1 1 0 0 0 1 1h3l7 4V6L7 10H4a1 1 0 0 0-1 1z\"/><path d=\"M18 9a4 4 0 0 1 0 6\"/>", "plus": "<path d=\"M12 5v14M5 12h14\"/>", "send": "<path d=\"M22 2L11 13\"/><path d=\"M22 2l-7 20-4-9-9-4z\"/>", "dl": "<path d=\"M12 3v12m0 0l-4-4m4 4l4-4\"/><path d=\"M4 21h16\"/>", "pr": "<path d=\"M6 9V3h12v6\"/><rect x=\"4\" y=\"9\" width=\"16\" height=\"8\" rx=\"2\"/><path d=\"M7 14h10v7H7z\"/>", "out": "<path d=\"M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4\"/><path d=\"M16 17l5-5-5-5M21 12H9\"/>", "x": "<path d=\"M6 6l12 12M18 6L6 18\"/>", "check": "<path d=\"M5 12.5l4.5 4.5L19 7\"/>", "clock": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7v5l3 2\"/>", "refresh": "<path d=\"M21 12a9 9 0 1 1-3-6.7\"/><path d=\"M21 4v5h-5\"/>", "l": "<path d=\"M15 5l-7 7 7 7\"/>", "r": "<path d=\"M9 5l7 7-7 7\"/>", "reply": "<path d=\"M9 14L4 9l5-5\"/><path d=\"M4 9h10a6 6 0 0 1 6 6v3\"/>", "pin": "<path d=\"M12 17v5M8 3h8l-1 7 3 3v2H6v-2l3-3z\"/>", "warn": "<path d=\"M12 3l10 18H2z\"/><path d=\"M12 10v5M12 18h.01\"/>", "theme": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 3a9 9 0 0 1 0 18z\" fill=\"currentColor\"/>", "camera":"<rect x=\"3\" y=\"6\" width=\"18\" height=\"13\" rx=\"3\"/><path d=\"M8 6l1.5-2h5L16 6\"/><circle cx=\"12\" cy=\"12.5\" r=\"3.2\"/>","arrow": "<path d=\"M5 12h14M13 6l6 6-6 6\"/>"};const NK={mygrades:'grades',myatt:'att'},SV=(k,o)=>SVP[k]?`<svg class="ic${o?' o':''}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${SVP[k]}</svg>`:'';
+const E=s=>String(s).replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';'),$=s=>document.querySelector(s),NW=()=>new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,16).replace('T',' '),D=NW().slice(0,10);
+const L={
+uz:{tag:"Texnikumlar uchun elektron kundalik",login:"Login",pw:"Parol",enter:"Kirish",bad:"Login yoki parol noto'g'ri",out:"Chiqish",admin:"Platforma admini",director:"Direktor",deputy:"Direktor o'rinbosari",curator:"Kurator",teacher:"O'qituvchi",student:"Talaba",techs:"Texnikumlar",overview:"Bugun",staff:"Xodimlar",att:"Davomat",students:"Talabalar",report:"Hisobot",grades:"Baholar",name:"F.I.Sh.",city:"Shahar",add:"Qo'shish",group:"Guruh",subj:"Fan",p:"Keldi",a:"Kelmadi",l:"Kechikdi",st:"Holat",role:"Lavozim",to:"Kimga",send:"Yuborish",text:"Bugungi ish hisoboti...",none:"Hozircha yo'q",avg:"O'rtacha",abs:"Bugun kelmaganlar",rep:"Hisobotlar",made:"Yaratildi",pp:"Maxfiylik siyosati",ppt:"1. Ma'lumotlar: F.I.Sh., login, lavozim, guruh, baholar, davomat, hisobotlar, chat xabarlari va fayllar.\n2. Maqsad: texnikum elektron kundaligini yuritish. Ma'lumotlar sotilmaydi. Platformada reklama ko'rsatilishi mumkin; shaxsiy ma'lumotlar reklama beruvchilarga berilmaydi.\n3. Kirish: ma'lumotni faqat o'z texnikumining xodimlari va talabalari o'z roli doirasida ko'radi.\n4. Xavfsizlik: parollar himoyalangan bazada xesh ko'rinishida saqlanadi.\n5. Huquqlar: ma'lumotni to'g'rilash yoki o'chirish uchun direktor yoki Yordam xizmatiga murojaat qiling.",back:"Orqaga",sup:"Yordam",newp:"Yangi parol",save:"Saqlash",taken:"Bu login band",chc:"Kuratorlar",chd:"Rahbariyat",cht:"O'qituvchilar",msg:"Xabar...",blk:"Blok",users:"Foydalanuvchilar",pct:"Davomat %",chat:"Chat",news:"E'lonlar",hw:"Uy vazifasi",prof:"Profil"},
+ru:{tag:"Электронный дневник для техникумов",login:"Логин",pw:"Пароль",enter:"Войти",bad:"Неверный логин или пароль",out:"Выйти",admin:"Админ платформы",director:"Директор",deputy:"Зам. директора",curator:"Куратор",teacher:"Учитель",student:"Студент",techs:"Техникумы",overview:"Сегодня",staff:"Сотрудники",att:"Посещаемость",students:"Студенты",report:"Отчёт",grades:"Оценки",name:"ФИО",city:"Город",add:"Добавить",group:"Группа",subj:"Предмет",p:"Пришёл",a:"Не пришёл",l:"Опоздал",st:"Статус",role:"Должность",to:"Кому",send:"Отправить",text:"Отчёт за сегодня...",none:"Пока пусто",avg:"Средний",abs:"Не пришли сегодня",rep:"Отчёты",made:"Создан",pp:"Политика конфиденциальности",ppt:"1. Данные: ФИО, логин, роль, группа, оценки, посещаемость, отчёты, сообщения и файлы в чатах.\n2. Цель: работа электронного дневника техникума. Данные не продаются. Платформа может показывать рекламу; личные данные рекламодателям не передаются.\n3. Доступ: данные видят только сотрудники и студенты своего техникума в рамках своей роли.\n4. Безопасность: пароли хранятся в защищённой базе в виде хэшей.\n5. Права: чтобы исправить или удалить данные, обратитесь к директору или в поддержку.",back:"Назад",sup:"Поддержка",newp:"Новый пароль",save:"Сохранить",taken:"Логин занят",chc:"Кураторы",chd:"Руководство",cht:"Учителя",msg:"Сообщение...",blk:"Блок",users:"Пользователи",pct:"Посещаемость %",chat:"Чат",news:"Объявления",hw:"Домашнее задание",prof:"Профиль"},
+en:{tag:"E-diary for technical colleges",login:"Login",pw:"Password",enter:"Sign in",bad:"Wrong login or password",out:"Log out",admin:"Platform admin",director:"Director",deputy:"Deputy director",curator:"Curator",teacher:"Teacher",student:"Student",techs:"Colleges",overview:"Today",staff:"Staff",att:"Attendance",students:"Students",report:"Report",grades:"Grades",name:"Full name",city:"City",add:"Add",group:"Group",subj:"Subject",p:"Present",a:"Absent",l:"Late",st:"Status",role:"Role",to:"To",send:"Send",text:"Today's report...",none:"Nothing yet",avg:"Average",abs:"Absent today",rep:"Reports",made:"Created",pp:"Privacy Policy",ppt:"1. Data: full name, login, role, group, grades, attendance, reports, chat messages and files.\n2. Purpose: running your college's e-diary. Data is never sold. The platform may show ads; personal data is not shared with advertisers.\n3. Access: only staff and students of the same college see data, within their role.\n4. Security: passwords are stored as hashes in a protected database.\n5. Rights: to correct or delete your data, contact your director or Support.",back:"Back",sup:"Support",newp:"New password",save:"Save",taken:"Login is taken",chc:"Curators",chd:"Management",cht:"Teachers",msg:"Message...",blk:"Block",users:"Users",pct:"Attendance %",chat:"Chat",news:"News",hw:"Homework",prof:"Profile"}};
+let lang='ru',S,me,tab,gs,cd=D,cr='',pv=0,showHome=true;
+try{lang=localStorage.getItem('etl')||'ru';S=JSON.parse(localStorage.getItem('etx'))}catch(e){}
+const t=k=>(L[lang]||L.ru)[k]||k,save=()=>{try{localStorage.setItem('etx',JSON.stringify(S))}catch(e){}};
+function seed(){S={techs:[],groups:[],users:[{id:1,name:'eTexnikum Admin',login:'admin',pw:'admin',role:'admin',tech:0,mc:1}],att:{},grades:[],reports:[]};save()}
+if(S&&S.users&&S.techs&&S.techs[0]&&S.techs[0].name=='Toshkent axborot texnologiyalari texnikumi'&&S.users.some(u=>u.login=='director'&&u.name=='Rustam Aliyev'))S=null;
+if(!S)seed();
+if(!S.msgs){S.msgs=[];S.news=[];S.hw=[];save()}
+const tbl=(h,r)=>`<div class=sc><table><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr>${r.map(x=>`<tr>${x.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</table></div>`,
+card=(h,b)=>`<div class=card><h3>${h}</h3>${b}</div>`,chip=x=>`<span class=ch>${x}</span>`,none=()=>`<span class=mu>${t('none')}</span>`,
+O=(a,s)=>a.map(([v,n])=>`<option value="${v}"${v==s?' selected':''}>${n}</option>`).join(''),
+inp=(p,a)=>a.map((k,i)=>`<input id=${p}${i} placeholder="${t(k)}">`).join(''),
+RS=u=>u.rs||[u.role],isD=()=>RS(me).some(r=>r=='director'||r=='deputy'),nav=u=>[...new Set(RS(u).flatMap(r=>NAV[r=='deputy'?'director':r])),...(u.role=='admin'?['prof']:u.role=='parent'?['sched','news','prof']:['sched','news','prof'])].filter(x=>x!='camera'||RS(u).includes('director')),
+acc=id=>{const q=RS(me);return id=='c'?q.includes('curator')||isD():id=='d'?isD():id=='t'?q.includes('teacher')||isD():!isD()&&(q.includes('teacher')||me.group==id.slice(1))},
+stat=a=>`<div class=grid>${a.map(x=>`<div class="card st"><b>${x[1]}</b><span>${x[0]}</span></div>`).join('')}</div>`,
+free=l=>!S.users.some(u=>u.login==l),ls=k=>{try{return localStorage.getItem(k)}catch(e){}},FD={},
+LK={tg:'https://t.me/etexnikum',ig:'https://instagram.com/etexnikum',sp:'https://t.me/etexnikum_support'},
+ymd=d=>new Date(d-d.getTimezoneOffset()*6e4).toISOString().slice(0,10),I=o=>new Intl.DateTimeFormat(lang,o),
+msg=m=>{const s=m.f&&(FD[m.id]||ls('etf'+m.id)),y=m.f?m.f.ty:'';return `<div class=m><b>${E(m.by)}</b> ${chip(t(m.role))} <small class=mu>${m.t}</small>${m.txt?`<div>${E(m.txt)}</div>`:''}${m.f?(!s?`<small class=mu>${PC} ${E(m.f.n)}</small>`:y.startsWith('image/')?`<img src="${s}">`:y.startsWith('audio/')?`<audio controls src="${s}"></audio>`:`<a href="${s}" download="${E(m.f.n)}">${PC} ${E(m.f.n)}</a>`):''}</div>`},
+sts=()=>S.users.filter(u=>u.role=='student'&&u.tech==me.tech),
+TG=()=>S.groups.filter(g=>g.tech==me.tech),RL=()=>['teacher','curator','deputy'].map(r=>[r,t(r)]),
+gn=id=>E((S.groups.find(g=>g.id==id)||{}).name||'—'),
+NAV={admin:['techs','ads'],director:['overview','dash','camera','req','staff'],parent:['mygrades','myatt','hw','lib','req'],curator:['att','students','req','report'],teacher:['grades','hw','lib','report'],student:['mygrades','myatt','hw','lib','req']},DT=['overview','att','report','grades','mygrades','myatt'];
+const V={
+techs:()=>stat([[t('techs'),S.techs.length],[t('users'),S.users.length],[t('students'),S.users.filter(u=>u.role=='student').length]])+card(t('techs'),tbl([t('name'),t('city'),t('director'),t('students'),''],S.techs.map(x=>[E(x.name),E(x.city),E(x.dir),S.users.filter(u=>u.role=='student'&&u.tech==x.id).length,`<button class="tg${x.off?' on':''}" onclick="blkT(${x.id})">${t('blk')}</button> ${DB('t',x.id)}`])))+card(t('add'),`<div class=row>${inp('f',['name','city','director','login','pw'])}<button class=pr onclick=addTech()>${t('add')}</button></div>`),
+overview:()=>{const s=sts(),n=(k,a=s)=>a.filter(u=>S.att[cd+'|'+u.id]==k).length,r=S.reports.filter(x=>x.tech==me.tech&&x.t.startsWith(cd));
+ return `<div class=grid>${[['students',s.length],['p',n('p')],['a',n('a')],['l',n('l')],['rep',r.length]].map(x=>`<div class="card st"><b>${x[1]}</b><span>${t(x[0])}</span></div>`).join('')}</div>`
+ +card(t('att')+' · '+cd,tbl([t('group'),t('p'),t('a'),t('l')],TG().map(g=>{const q=s.filter(u=>u.group==g.id);return[E(g.name),n('p',q),n('a',q),n('l',q)]})))
+ +card(t('abs'),s.filter(u=>S.att[cd+'|'+u.id]=='a').map(u=>chip(E(u.name)+' · '+gn(u.group))).join('')||none())
+ +card(t('rep'),r.map(x=>`<div class=rep><b>${E(x.by)}</b> ${chip(t(x.role))} ${SV('arrow')}${t(x.to)} <small class=mu>${x.t}</small><p>${E(x.txt)}</p></div>`).join('')||none())},
+staff:()=>card(t('staff'),tbl([t('name'),t('login'),t('role'),t('group'),''],S.users.filter(u=>u.tech==me.tech&&!['student','director'].includes(u.role)).map(u=>[E(u.name),E(u.login),RL().map(([r,n])=>`<button class="tg${RS(u).includes(r)?' on':''}" onclick="tg(${u.id},'${r}')">${n}</button>`).join(' '),RS(u).includes('curator')?`<select onchange="setG(${u.id},this.value)">${O(TG().map(g=>[g.id,E(g.name)]),u.group)}</select>`:'—',`<button class="tg${u.off?' on':''}" onclick="blk(${u.id})">${t('blk')}</button> ${DB('u',u.id)}`]))
+ +`<div class=row style="margin-top:12px">${inp('s',['name','login','pw'])}<select id=s3>${O(RL())}</select><input id=s4 placeholder="${t('subj')}"><button class=pr onclick=addStaff()>${t('add')}</button></div>`)
+ +card(t('group'),`<div class=row>${TG().map(g=>chip(E(g.name)+' '+DB('g',g.id))).join('')}<input id=gn placeholder="IT-23"><button class=pr onclick=addGroup()>${t('add')}</button></div>`),
+att:()=>card(t('att')+' · '+gn(me.group)+' · '+cd,tbl([t('name'),t('st')],sts().filter(u=>u.group==me.group).map(u=>[E(u.name),['p','a','l','e'].map(k=>`<button class="sb ${k}${S.att[cd+'|'+u.id]==k?' on':''}" onclick="mark(${u.id},'${k}')">${t(k)}</button>`).join(' ')]))),
+students:()=>card(t('students')+' · '+gn(me.group),tbl([t('name'),t('login'),t('pw'),''],sts().filter(u=>u.group==me.group).map(u=>[E(u.name),E(u.login),`<button onclick="rst(${u.id})">${SV('refresh',1)}</button>`,`<button class="tg${u.off?' on':''}" onclick="blk(${u.id})">${t('blk')}</button> ${DB('u',u.id)}`]))+`<div class=row style="margin-top:12px">${inp('n',['name','login','pw'])}<button class=pr onclick=addSt()>${t('add')}</button></div><p id=mk class=mu></p>`),
+report:()=>card(t('report'),`<div class=row style="margin-bottom:8px"><span class=mu>${t('to')}:</span><select id=rt>${O([['director',t('director')],['deputy',t('deputy')]])}</select></div><textarea id=rx placeholder="${t('text')}"></textarea><p><button class=pr onclick=sendR()>${t('send')}</button></p>`)
+ +card(t('rep'),S.reports.filter(x=>x.by==me.name&&x.t.startsWith(cd)).reverse().map(x=>`<div class=rep>${SV('arrow')}${t(x.to)} <small class=mu>${x.t}</small><p>${E(x.txt)}</p></div>`).join('')||none()),
+grades:()=>card(t('grades')+' · '+E(me.subj||'—'),`<div class=row style="margin-bottom:8px"><select onchange="gs=+this.value;draw()">${O(TG().map(g=>[g.id,E(g.name)]),gs)}</select></div>`
+ +tbl([t('name'),t('grades'),'+'],sts().filter(u=>u.group==gs).map(u=>[E(u.name),S.grades.filter(x=>x.s==u.id&&x.j==me.subj&&x.d==cd).map(x=>chip(x.g)).join(''),`<select onchange="addG(${u.id},this.value)"><option value="">+</option>${O([5,4,3,2].map(g=>[g,g]))}</select>`]))),
+mygrades:()=>{const m=S.grades.filter(x=>x.s==ME().id),k=Object.keys(S.att).filter(x=>x.endsWith('|'+ME().id));return stat([[t('avg'),(m.reduce((s,x)=>s+x.g,0)/(m.length||1)).toFixed(1)],[t('pct'),Math.round(100*k.filter(x=>S.att[x]!='a').length/(k.length||1))+'%']])+card(t('grades'),tbl([t('subj'),t('grades'),t('avg')],[...new Set(m.map(x=>x.j))].map(j=>{const a=m.filter(x=>x.j==j);return[E(j),a.map(x=>chip(`${x.g} <small class=mu>${x.d.slice(5)}${x.c?' · '+E(x.c):''}</small>`)).join(''),(a.reduce((s,x)=>s+x.g,0)/a.length).toFixed(1)]})))},
+myatt:()=>card(t('att'),tbl(['',t('st')],Object.keys(S.att).filter(k=>k.endsWith('|'+ME().id)).sort().reverse().slice(0,10).map(k=>[k.split('|')[0],chip(t(S.att[k]))])))};
+Object.assign(V,{
+camera:()=>{if(!RS(me).includes('director'))return card(t('camera'),`<p class=er>${t('security')}</p>`);return card(t('camera'),`<p class=mu>${t('security')}</p><div class=cam-grid><div><div class=cam-box><video id=cam autoplay playsinline muted></video><div id=cam-ph class=cam-placeholder>📷<br>${t('scan')}</div></div><div class=row style="margin-top:8px"><button class=pr onclick="startCam()">${t('scan')}</button><button onclick="stopCam()">${t('stop')}</button><button onclick="captureCam()">${t('capture')}</button></div><img id=cam-shot class=cam-shot alt=""></div><div class=ai-card><label class=mu>${t('chooseStudent')}</label><select id=cam-st style="width:100%;margin:7px 0">${S.users.filter(u=>u.tech==me.tech&&u.role=='student').map(u=>`<option value="${u.id}">${E(u.name)} · ${E(u.login)}</option>`).join('')}</select><button class=pr style="width:100%" onclick="analyzeStudent()">${t('analyze')}</button><div id=ai-out style="margin-top:10px">${t('aiSummary')}</div></div></div>`)},
+chat:()=>{const rs=[['c',t('chc')],['d',t('chd')],['t',t('cht')],...TG().map(g=>['g'+g.id,E(g.name)])].filter(r=>acc(r[0]));if(!rs.some(r=>r[0]==cr))cr=(rs[0]||[])[0];
+ return card(t('chat'),`<div class=row style="margin-bottom:8px">${rs.map(r=>`<button class="tg${r[0]==cr?' on':''}" onclick="cr='${r[0]}';draw()">${r[1]}</button>`).join('')}</div><div id=ms>${S.msgs.filter(m=>m.tech==me.tech&&m.room==cr).map(msg).join('')||none()}</div><div class=row><input id=mt style="flex:1;min-width:140px" placeholder="${t('msg')}" onkeydown="if(event.key=='Enter')sendM()"><label class=tg style="padding:8px 11px;border:1px solid var(--bd);border-radius:9px;cursor:pointer">${PC}<input id=mf type=file hidden></label><button class=pr onclick=sendM()>${t('send')}</button></div><small id=mi class=mu></small>`)},
+news:()=>(isD()?card(t('news'),`<div class=row><input id=nw style="flex:1" placeholder="${t('msg')}"><button class=pr onclick=addNews()>${t('send')}</button></div>`):'')+card(t('news'),S.news.filter(x=>x.tech==me.tech).slice().reverse().map(x=>`<div class=rep><b>${E(x.by)}</b> <small class=mu>${x.t}</small><p>${E(x.txt)}</p></div>`).join('')||none()),
+hw:()=>{const T=RS(me).includes('teacher'),St=RS(me).includes('student');return (T?card(t('hw')+' · '+E(me.subj||'—'),`<div class=row><select id=hg>${O(TG().map(g=>[g.id,E(g.name)]))}</select><input id=hx style="flex:1" placeholder="${t('msg')}"><button class=pr onclick=addHw()>${t('add')}</button></div>`):'')+card(t('hw'),S.hw.filter(x=>x.tech==me.tech&&(St?x.group==me.group:!T||x.by==me.name)).slice().reverse().map(x=>`<div class=rep><b>${E(x.subj)}</b> ${chip(gn(x.group))} <small class=mu>${x.t}</small><p>${E(x.txt)}</p></div>`).join('')||none())},
+prof:()=>card(t('prof'),`<p><b>${E(me.name)}</b><br><span class=mu>${E(me.login)} · ${RS(me).map(t).join(' + ')}</span></p><div class=row><div class=pwf style="flex:1"><input id=p1 type=password autocomplete=new-password placeholder="${t('newp')}"><button type=button class=eye aria-label="${t('shw')}" onpointerdown="event.preventDefault()" onclick="eye(this)">${SV('eye',1)}</button></div><button class=pr onclick=chp()>${t('save')}</button></div><p id=pm class=mu></p>`)});
+const R=(id,f)=>{f(S.users.find(x=>x.id==id));save();draw()},fg=()=>(TG()[0]||{}).id;
+function addTech(){const v=[0,1,2,3,4].map(i=>$('#f'+i).value.trim());if(v.some(x=>!x)||!free(v[3]))return;const id=Date.now();S.techs.push({id,name:v[0],city:v[1],dir:v[2]});S.users.push({id:id+1,name:v[2],login:v[3],pw:HP(v[4]),mc:1,role:'director',tech:id});save();draw()}
+function tg(id,r){R(id,u=>{let a=RS(u);a=a.includes(r)?a.filter(x=>x!=r):[...a,r];if(!a.length)return;u.rs=a;u.role=a[0];if(a.includes('curator')&&!u.group)u.group=fg()})}
+function blk(id){R(id,u=>{u.off=!u.off})}
+function setG(id,v){R(id,u=>u.group=+v)}
+function addStaff(){const v=[0,1,2,3,4].map(i=>$('#s'+i).value.trim());if(!v[0]||!v[1]||!v[2]||!free(v[1]))return;S.users.push({id:Date.now(),name:v[0],login:v[1],pw:HP(v[2]),mc:1,role:v[3],tech:me.tech,subj:v[4]||'—',group:fg()});save();draw()}
+function addGroup(){const v=$('#gn').value.trim();if(v){S.groups.push({id:Date.now(),name:v,tech:me.tech});save();draw()}}
+function mark(id,k){if(cd>D)return;S.att[cd+'|'+id]=k;save();draw()}
+function addSt(){const v=[0,1,2].map(i=>$('#n'+i).value.trim()),n=v[0];if(!n)return;
+ const l=v[1]||(n.toLowerCase().replace(/[^a-z]/g,'').slice(0,8)||'talaba')+(10+Math.floor(Math.random()*90)),p=v[2]||GP();
+ if(!free(l)){$('#mk').textContent=t('taken');return}
+ S.users.push({id:Date.now(),name:n,login:l,pw:HP(p),mc:1,role:'student',tech:me.tech,group:me.group});save();draw();$('#mk').textContent=t('made')+': '+l+' / '+p}
+function sendR(){const x=$('#rx').value.trim();if(!x)return;S.reports.push({by:me.name,role:me.role,to:$('#rt').value,tech:me.tech,t:NW(),txt:x});cd=D;save();draw()}
+function addG(s,g){if(g){S.grades.push({s,j:me.subj,g:+g,d:cd});save();draw()}}
+function blkT(id){const x=S.techs.find(x=>x.id==id);x.off=!x.off;save();draw()}
+function addNews(){const v=$('#nw').value.trim();if(v){S.news.push({tech:me.tech,by:me.name,t:D,txt:v});save();draw()}}
+function addHw(){const v=$('#hx').value.trim();if(v){S.hw.push({tech:me.tech,group:+$('#hg').value,subj:me.subj||'—',by:me.name,t:D,txt:v});save();draw()}}
+function chp(){const v=$('#p1').value.trim();if(v.length<8||!/[A-Za-zА-Яа-я]/.test(v)||!/\d/.test(v)){$('#pm').textContent=t('pwp');return}const mc=me.mc;me.pw=HP(v);me.mc=0;save();$('#pm').innerHTML=SV('check',1);if(mc)draw()}
+function sendM(){const x=$('#mt').value.trim(),f=$('#mf').files[0];if(!x&&!f)return;
+ const add=a=>{const id=Date.now();S.msgs.push({id,room:cr,tech:me.tech,by:me.name,role:me.role,t:NW(),txt:x,f:a&&{n:f.name,ty:f.type}});if(a){FD[id]=a;try{localStorage.setItem('etf'+id,a)}catch(e){}}save();draw()};
+ if(!f)return add();if(f.size>1.5e6){$('#mi').textContent='≤ 1.5 MB';return}
+ const r=new FileReader();r.onload=()=>add(r.result);r.readAsDataURL(f)}
+function mv(n){const d=new Date(cd+'T12:00:00');d.setMonth(d.getMonth()+n,1);cd=ymd(d)>D?D:ymd(d);draw()}
+function cal(){const d=new Date(cd+'T12:00:00'),y=d.getFullYear(),m=d.getMonth(),f=(new Date(y,m,1).getDay()+6)%7,
+ has=s=>RS(me).some(r=>r=='student'||r=='parent')?S.att[s+'|'+ME().id]||'':Object.keys(S.att).some(k=>k.startsWith(s))||S.reports.some(r=>r.t.startsWith(s))?'h':'';
+ let c=[...Array(7)].map((_,i)=>`<small class=mu>${I({weekday:'short'}).format(new Date(2024,0,1+i))}</small>`).join('')+'<i></i>'.repeat(f);
+ for(let i=1;i<=new Date(y,m+1,0).getDate();i++){const s=ymd(new Date(y,m,i));c+=`<button class="dc ${has(s)}${s==cd?' on':''}" ${s>D?'disabled':''} onclick="cd='${s}';draw()">${i}</button>`}
+ return card(`<button onclick="mv(-1)">${SV('l',1)}</button> ${I({month:'long',year:'numeric'}).format(d)} <button onclick="mv(1)">${SV('r',1)}</button> <button onclick="cd=D;draw()">${t('overview')}</button> · ${cd}`,`<div class=cg>${c}</div>`)}
+function th(){const r=document.documentElement;r.dataset.theme=(r.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))=='dark'?'light':'dark'}
+function finishLogin(u){
+  FC=0;
+  const m=LKS();delete m['u:'+String(u.login).trim().toLowerCase()];LKW(m);
+  S.lg.push({l:u.login,ok:1,t:NW()});S.lg=S.lg.slice(-100);save();
+  me=u;showHome=false;tab=u.mc&&nav(u).includes('prof')?'prof':nav(u)[0];gs=fg();cd=D;draw();
+}
+function go(l,p){
+  if(!gate())return;
+  const u0=S.users.find(x=>x.login==l),ok=u0?PV(u0,p):(PV({pw:DUM=DUM||HP('x')},p),false),u=ok?u0:null;
+  if(!u||u.off||(S.techs.find(x=>x.id==u.tech)||{}).off)return fail();
+  if(!u.pw.startsWith('v2$'))u.pw=HP(p);
+  finishLogin(u);
+}
+
+const BIOKEY='etx_passkeys_v1';
+function bioStore(){try{return JSON.parse(localStorage.getItem(BIOKEY)||'{}')}catch(e){return {}}}
+function bioSave(v){try{localStorage.setItem(BIOKEY,JSON.stringify(v))}catch(e){}}
+function b64url(buf){return btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'')}
+function fromB64url(s){s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';const bin=atob(s);return Uint8Array.from(bin,c=>c.charCodeAt(0))}
+function bioSupported(){return window.isSecureContext&&window.PublicKeyCredential&&navigator.credentials}
+async function setupFaceID(){
+  if(!me)return;
+  const out=$('#bio-msg')||$('#pm');
+  if(!bioSupported()){if(out)out.textContent=t('bioNo');return}
+  try{
+    const ch=crypto.getRandomValues(new Uint8Array(32));
+    const uid=crypto.getRandomValues(new Uint8Array(16));
+    const cred=await navigator.credentials.create({publicKey:{
+      challenge:ch,
+      rp:{name:'eTexnikum',id:location.hostname||undefined},
+      user:{id:uid,name:me.login,displayName:me.name},
+      pubKeyCredParams:[{type:'public-key',alg:-7},{type:'public-key',alg:-257}],
+      authenticatorSelection:{authenticatorAttachment:'platform',userVerification:'required',residentKey:'preferred'},
+      timeout:60000,
+      attestation:'none'
+    }});
+    if(!cred)throw new Error('cancelled');
+    const store=bioStore();store[me.login]={id:b64url(cred.rawId),user:me.login,created:Date.now()};bioSave(store);
+    if(out)out.textContent='✓ '+t('bioOk');
+    toast('✓ '+t('bioOk'));
+  }catch(e){if(out)out.textContent=t('bioErr')}
+}
+async function faceLogin(){
+  const msg=$('#bio-msg');
+  if(!bioSupported()){if(msg)msg.textContent=t('bioNo');return}
+  const l=($('#lg')||{}).value?.trim();
+  if(!l){if(msg)msg.textContent=t('bioNeed');return}
+  const u=S.users.find(x=>x.login==l),rec=bioStore()[l];
+  if(!u||!rec){if(msg)msg.textContent=t('bioNeed');return}
+  try{
+    const ch=crypto.getRandomValues(new Uint8Array(32));
+    const cred=await navigator.credentials.get({publicKey:{
+      challenge:ch,
+      rpId:location.hostname,
+      allowCredentials:[{type:'public-key',id:fromB64url(rec.id)}],
+      userVerification:'required',
+      timeout:60000
+    }});
+    if(!cred||b64url(cred.rawId)!==rec.id)throw new Error('bad credential');
+    // Static-file prototype note: production must verify the WebAuthn assertion on the server.
+    finishLogin(u);
+  }catch(e){if(msg)msg.textContent=t('bioErr')}
+}
+
+
+let CAMSTREAM=null;
+function startCam(){
+  if(!RS(me).includes('director'))return;
+  if(!navigator.mediaDevices?.getUserMedia){toast('Camera API unavailable');return}
+  navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'user'},width:{ideal:1280},height:{ideal:720},audio:false}})
+  .then(st=>{CAMSTREAM=st;const v=$('#cam');if(v){v.srcObject=st;v.play().catch(()=>{});};const p=$('#cam-ph');if(p)p.style.display='none';})
+  .catch(()=>toast('Нет доступа к камере'));
+}
+function stopCam(){if(CAMSTREAM){CAMSTREAM.getTracks().forEach(x=>x.stop());CAMSTREAM=null}const v=$('#cam');if(v)v.srcObject=null;const p=$('#cam-ph');if(p)p.style.display='grid'}
+function captureCam(){
+  const v=$('#cam'),img=$('#cam-shot');if(!v||!v.videoWidth)return toast('Сначала запустите камеру');
+  const c=document.createElement('canvas');c.width=v.videoWidth;c.height=v.videoHeight;c.getContext('2d').drawImage(v,0,0);
+  if(img){img.src=c.toDataURL('image/jpeg',.82);img.style.display='block'}
+}
+function analyzeStudent(){
+  if(!RS(me).includes('director'))return;
+  const id=+($('#cam-st')?.value||0),u=S.users.find(x=>x.id==id&&x.tech==me.tech&&x.role=='student');
+  if(!u)return;
+  const g=S.groups.find(x=>x.id==u.group);
+  const grades=S.grades.filter(x=>x.s==u.id),avg=grades.length?(grades.reduce((a,x)=>a+x.g,0)/grades.length).toFixed(2):'—';
+  const ak=Object.keys(S.att).filter(k=>k.endsWith('|'+u.id)),present=ak.filter(k=>['p','l'].includes(S.att[k])).length,att=ak.length?Math.round(100*present/ak.length):0;
+  const reports=S.reports.filter(x=>x.tech==me.tech&&x.by==u.name).length;
+  const recent=grades.slice(-5).map(x=>`${E(x.j)}: ${x.g}`).join(' · ')||'—';
+  $('#ai-out').innerHTML=`<h4 style="margin:0 0 8px">${t('aiSummary')}</h4><div class=ai-row><b>${t('name')}</b><span>${E(u.name)}</span></div><div class=ai-row><b>${t('login')}</b><span>${E(u.login)}</span></div><div class=ai-row><b>${t('group')}</b><span>${E(g?.name||'—')}</span></div><div class=ai-row><b>${t('avg')}</b><span>${avg}</span></div><div class=ai-row><b>${t('pct')}</b><span>${att}%</span></div><div class=ai-row><b>${t('grades')}</b><span>${recent}</span></div><div class=ai-row><b>${t('rep')}</b><span>${reports}</span></div><p class=ai-note>🔒 Пароль не раскрывается. Для выдачи доступа используйте штатный сброс временного пароля.</p><button onclick="rst(${u.id});toast('Временный пароль создан')">${t('newp')}</button>`;
+}
+
+function setL(v){lang=v;try{localStorage.setItem('etl',v)}catch(e){}draw()}
+
+function homeView(){
+ return `<div class="home-screen">
+   <div class="home-wrap">
+    <div class="home-nav">
+      <div class="home-brand"><div class="logo"><svg viewBox="0 0 64 64" width="30" height="30"><path d="M8 25L32 12L56 25L32 38L8 25Z" fill="white"/><path d="M16 31V44L32 52L48 44V31L32 40L16 31Z" fill="#dbe7ff"/><path d="M49 24V42" stroke="#18A957" stroke-width="4"/><circle cx="49" cy="45" r="5" fill="#18A957"/></svg></div><span class="e">e</span><span class="t">Texnikum</span></div>
+      <div class="home-links"><a href="#home-features">Imkoniyatlar</a><a href="#home-roles">Rollar</a><a href="#home-about">Platforma</a><a href="#home-cta">Aloqa</a></div>
+      <button class="home-login" onclick="showHome=false;draw()">Kirish</button>
+    </div>
+    <section class="home-hero" id="home-top">
+      <div class="home-grid">
+        <div>
+          <div class="home-kicker">Texnikumlar uchun raqamli platforma</div>
+          <h1 class="home-title">Ta'limni <span class="g">raqamli</span><br>boshqarish <span class="b">endi oson.</span></h1>
+          <p class="home-desc">eTexnikum — texnikumlarni boshqarish, talabalar, xodimlar, davomat, baholar, darslar va hisobotlarni yagona tizimda birlashtiruvchi zamonaviy raqamli platforma.</p>
+          <div class="home-actions"><button class="home-primary" onclick="showHome=false;draw()">Tizimga kirish →</button><a class="home-secondary" href="#home-features">Platforma imkoniyatlari</a></div>
+        </div>
+        <div class="home-preview" aria-label="eTexnikum dashboard preview">
+          <div class="home-preview-top"><span class="home-dot"></span><span class="home-dot"></span><span class="home-dot"></span><span class="home-preview-title">eTexnikum — Boshqaruv paneli</span></div>
+          <div class="home-preview-body">
+            <aside class="home-side"><div class="on">Bosh sahifa</div><div>Talabalar</div><div>Xodimlar</div><div>Guruhlar</div><div>Darslar</div><div>Davomat</div><div>Baholar</div><div>Hisobotlar</div></aside>
+            <div class="home-content">
+              <div class="home-welcome"><h3>Assalomu alaykum!</h3><div class="home-avatar"></div></div>
+              <div class="home-stats"><div class="home-stat"><small>Talabalar</small><strong>1 248</strong><b>+12%</b></div><div class="home-stat"><small>O'qituvchilar</small><strong>86</strong><b>+6%</b></div><div class="home-stat"><small>Guruhlar</small><strong>42</strong><b>+4%</b></div><div class="home-stat"><small>Davomat</small><strong>94%</strong><b>+2%</b></div></div>
+              <div class="home-chart"><b style="font-size:10px">Davomat ko'rsatkichi</b><div class="home-bars"><i class="home-bar" style="height:55%"></i><i class="home-bar" style="height:72%"></i><i class="home-bar" style="height:62%"></i><i class="home-bar" style="height:86%"></i><i class="home-bar" style="height:77%"></i><i class="home-bar" style="height:92%"></i><i class="home-bar" style="height:83%"></i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-features" id="home-features">
+      <div class="home-head"><div class="home-k2">Imkoniyatlar</div><h2 class="home-h2">Barcha jarayonlar — bir tizimda.</h2><p class="home-muted">Ta'lim jarayonining asosiy boshqaruv vositalarini yagona raqamli muhitda birlashtiring.</p></div>
+      <div class="home-feature-grid">
+        <article class="home-feature"><h3>Talabalar va xodimlar</h3><p>Foydalanuvchilarni, guruhlarni va asosiy ma'lumotlarni boshqaring.</p></article>
+        <article class="home-feature"><h3>Davomat</h3><p>Davomatni qayd eting va ta'lim jarayonini nazorat qiling.</p></article>
+        <article class="home-feature"><h3>Baholar</h3><p>Talabalarning natijalari va baholarini yagona tizimda saqlang.</p></article>
+        <article class="home-feature"><h3>Uy vazifalari</h3><p>Topshiriqlarni yuboring va o'quv jarayonini tartibli olib boring.</p></article>
+        <article class="home-feature"><h3>Hisobotlar</h3><p>Muhim ko'rsatkichlarni ko'ring va boshqaruv jarayonini kuzating.</p></article>
+        <article class="home-feature"><h3>Direktor kamerasi</h3><p>Direktor uchun kamera orqali o'quvchi profilini tez topish va tizimdagi ma'lumotlarni ko'rish.</p></article>
+      </div>
+    </section>
+    <section class="home-roles" id="home-roles">
+      <div class="home-head"><div class="home-k2">Rollar</div><h2 class="home-h2">Har bir foydalanuvchi uchun alohida imkoniyatlar.</h2></div>
+      <div class="home-role-grid"><div class="home-role"><h3>Direktor</h3><p>Boshqaruv, xodimlar, analitika va direktor kamerasi</p></div><div class="home-role"><h3>O'qituvchi</h3><p>Darslar, baholar va vazifalar</p></div><div class="home-role"><h3>Kurator</h3><p>Davomat, guruh va hisobotlar</p></div><div class="home-role"><h3>Talaba</h3><p>Baholar, davomat va topshiriqlar</p></div></div>
+    </section>
+    <section id="home-about"><div class="home-head"><div class="home-k2">eTexnikum</div><h2 class="home-h2">Texnikum uchun yagona raqamli muhit.</h2><p class="home-muted">Platforma ta'lim jarayonini tartibli, qulay va zamonaviy boshqarish uchun yaratilgan.</p></div></section>
+    <section class="home-cta" id="home-cta"><h2>Texnikumingizni raqamli boshqarishni boshlang.</h2><p>eTexnikum platformasini ko'ring va ta'lim jarayonini yagona tizimga olib chiqing.</p><button class="home-primary" onclick="showHome=false;draw()">Tizimga kirish →</button></section>
+    <div class="home-footer">© 2026 eTexnikum. Barcha huquqlar himoyalangan.</div>
+   </div>
+ </div>`;
+}
+function loginView(){
+ return `<div class="card lw"><p class=mu>${t('tag')}</p>
+   <input id="hp" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px">
+   <form id="lf" autocomplete="on" onsubmit="go($('#lg').value.trim(),$('#pw').value);return false">
+     <input id="lg" name="username" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" placeholder="${t('login')}">
+     <div class="pwf"><input id="pw" name="password" type="password" autocomplete="current-password" placeholder="${t('pw')}"><button type="button" class="eye" aria-label="${t('shw')}" onpointerdown="event.preventDefault()" onclick="eye(this)">${SV('eye',1)}</button></div>
+     <p class="fp"><a href=# onclick="fpOpen();return false">${t('fgt')}</a></p>
+     <button type="submit" class="pr" style="width:100%">${t('enter')}</button>
+     <button type="button" class="pr bio-btn" onclick="faceLogin()">◉ ${t('biom')}</button>
+     <span id="bio-msg" class="bio-msg"></span>
+   </form>
+   <p class="er" id="er"></p>
+   <p class="lk"><a href="${LK.tg}" target=_blank rel=noopener>${ICO.tg} Telegram</a><a href="${LK.ig}" target=_blank rel=noopener>${ICO.ig} Instagram</a><a href="${LK.sp}" target=_blank rel=noopener>${ICO.sp} ${t('sup')}</a></p>
+   <button class="secondary-btn" style="width:100%;margin-top:10px" onclick="showHome=true;draw()">← eTexnikum</button>
+ </div>`;
+}
+
+function draw(){
+ if(tab!=='camera' && CAMSTREAM)stopCam();
+ const lg=`<div class=lg><svg width=34 height=34 viewBox="0 0 64 64"><rect width=64 height=64 rx=16 fill="#1d4ed8"/><path d="M32 14 6 27l26 13 26-13z" fill="#fff"/><path d="M17 35l15 7 15-7v11l-15 6-15-6z" fill="#dbe6ff"/><path d="M55 28v14" stroke="#16a34a" stroke-width="2.4"/><circle cx=55 cy=44 r=3 fill="#16a34a"/></svg><span><i>e</i>Texnikum</span></div>`;
+ let h=`<header>${lg}<div class=row>${me?`<span class=mu>${E(me.name)} · ${RS(me).map(t).join(' + ')}</span><button onclick="me=null;showHome=false;draw()">${t('out')}</button>`:''}<button onclick="th()" aria-label=theme>${SV('theme',1)}</button><select onchange="setL(this.value)">${O(['uz','ru','en'].map(l=>[l,l.toUpperCase()]),lang)}</select></div></header><main>`;
+ h+=pv?card(t('pp'),`<p style="white-space:pre-line">${t('ppt')}</p><button onclick="pv=0;draw()">${t('back')}</button>`):me?`${adH()}${kidSel()}<nav>${nav(me).map(x=>`<button class="${x==tab?'on':''}" onclick="tab='${x}';draw()">${SV(NK[x]||x)}${t(x.replace('my',''))}</button>`).join('')}</nav>`+(DT.includes(tab)?cal():'')+V[tab]()
+ :(showHome?homeView():loginView());
+ $('#app').innerHTML=h+`</main><footer>© eTexnikum.uz · <a href=# onclick="pv=1;scrollTo(0,0);draw();return false">${t('pp')}</a> · <a href="${LK.sp}" target=_blank rel=noopener>${t('sup')}</a></footer>`;fabU()}
+
+const X={pwp:'Минимум 8 символов, буквы и цифры|Kamida 8 belgi, harf va raqam|At least 8 characters, letters and digits',mcm:'Смените временный пароль, чтобы продолжить|Davom etish uchun vaqtinchalik parolni almashtiring|Change your temporary password to continue',idl:'Выход: нет активности 15 минут|Faolsizlik tufayli chiqildi|Signed out after 15 minutes of inactivity',fgt:'Забыли пароль?|Parolni unutdingizmi?|Forgot password?',shw:'Показать пароль|Parolni ko’rsatish|Show password',hdp:'Скрыть пароль|Parolni yashirish|Hide password',parent:'Родитель|Ota-ona|Parent',sched:'Расписание|Dars jadvali|Schedule',dash:'Аналитика|Tahlil|Analytics',swap:'замена|almashtirish|swap',due:'до|muddat|due',subm:'Сдать|Topshirish|Submit',done:'Сдано|Topshirildi|Submitted',top:'Тема занятия|Dars mavzusi|Lesson topic',cm:'Комментарий|Izoh|Comment',hist:'История изменений|O‘zgarishlar tarixi|Change history',ddos:'Слишком много запросов. Подождите |Juda ko‘p so‘rov. Kuting |Too many requests. Wait ',trend:'Посещаемость за 7 дней|7 kunlik davomat|7-day attendance',prob:'Проблемные группы|Muammoli guruhlar|At-risk groups',act:'Активность преподавателей|O‘qituvchilar faolligi|Teacher activity',room:'Кабинет|Xona|Room',pair:'Пара|Juftlik|Lesson'};
+Object.entries(X).forEach(([k,v])=>v.split('|').forEach((s,i)=>L[['ru','uz','en'][i]][k]=s));
+const ICO={tg:'<svg class=ic viewBox="0 0 24 24"><circle cx=12 cy=12 r=12 fill="#229ED9"/><path fill="#fff" d="M5.4 11.9l11.6-4.5c.5-.2 1 .1.8.9l-2 9.3c-.1.7-.5.8-1.1.5l-3-2.2-1.4 1.4c-.2.2-.3.3-.6.3l.2-3.1 5.6-5c.2-.2 0-.3-.4-.1l-6.9 4.3-3-.9c-.6-.2-.7-.6.2-.9z"/></svg>',
+ig:'<svg class=ic viewBox="0 0 24 24"><defs><linearGradient id=igg x1=0 y1=1 x2=1 y2=0><stop offset=0 stop-color="#feda75"/><stop offset=.4 stop-color="#fa7e1e"/><stop offset=.7 stop-color="#d62976"/><stop offset=1 stop-color="#4f5bd5"/></linearGradient></defs><rect width=24 height=24 rx=6.5 fill="url(#igg)"/><rect x=5.2 y=5.2 width=13.6 height=13.6 rx=4 fill=none stroke="#fff" stroke-width=1.8 /><circle cx=12 cy=12 r=3.2 fill=none stroke="#fff" stroke-width=1.8 /><circle cx=16.3 cy=7.7 r=1.1 fill="#fff"/></svg>',
+sp:'<svg class=ic viewBox="0 0 24 24" fill=none stroke="currentColor" stroke-width=2 stroke-linecap=round stroke-linejoin=round><path d="M4 5h16v11H9l-5 4z"/></svg>'};
+const ME=()=>me.role=='parent'?S.users.find(u=>u.id==me.kid)||me:me,rn=id=>(S.users.find(u=>u.id==id)||{}).name||'?',
+LG=x=>{S.log.push({tech:me.tech,by:me.name,t:NW(),x});S.log=S.log.slice(-80)},
+hist=()=>S.log.filter(x=>x.tech==me.tech).slice(-8).reverse().map(x=>`<div class=rep><b>${E(x.by)}</b> <small class=mu>${x.t}</small> ${E(x.x)}</div>`).join('')||none(),
+bar=(a,m=100,u='%')=>a.map(([n,v])=>`<div class=br><span>${n}</span><div><i style="width:${Math.min(100,v/m*100)}%"></i></div><b>${v}${u}</b></div>`).join('');
+if(!S.sch){S.sch=[];S.rp=[];S.sub=[];S.log=[];S.top={};S.hw.forEach((h,i)=>h.id=h.id||i+1);save()}
+function addG(s,g){if(g){S.grades.push({s,j:me.subj,g:+g,d:cd,c:(($('#gc')||{}).value||'').trim()});LG(rn(s)+': '+me.subj+' → '+g);save();draw()}}
+function mark(id,k){if(cd>D)return;S.att[cd+'|'+id]=k;LG(rn(id)+': '+cd+' → '+t(k));save();draw()}
+function setTop(v){S.top[cd+'|'+gs+'|'+me.subj]=v;LG(t('top')+': '+v);save()}
+function addHw(){const v=$('#hx').value.trim();if(v){S.hw.push({id:Date.now(),tech:me.tech,group:+$('#hg').value,subj:me.subj||'—',by:me.name,t:D,due:$('#hd').value,txt:v});save();draw()}}
+function subm(h){const v=(($('#sb'+h)||{}).value||'').trim();if(v){S.sub.push({h,u:me.id,txt:v,t:NW()});LG('HW → '+rn(me.id));save();draw()}}
+function gradeS(h,u,g){const s=S.sub.find(x=>x.h==h&&x.u==u),w=S.hw.find(x=>x.id==h);if(s&&w&&+g){s.g=+g;S.grades.push({s:u,j:w.subj,g:+g,d:D,c:'HW'});LG(rn(u)+': '+w.subj+' HW → '+g);save();draw()}}
+function addRp(){const v=['rd','rn','rj','rc','rr'].map(i=>$('#'+i).value.trim());if(v.some(x=>!x))return;S.rp.push({tech:me.tech,g:+$('#rg').value,date:v[0],n:+v[1],j:v[2],tc:v[3],r:v[4]});LG(t('swap')+': '+v[2]+' '+v[0]);save();draw()}
+V.grades=()=>{const k=cd+'|'+gs+'|'+me.subj;return card(t('grades')+' · '+E(me.subj||'—'),`<div class=row style="margin-bottom:8px"><select onchange="gs=+this.value;draw()">${O(TG().map(g=>[g.id,E(g.name)]),gs)}</select><input style="flex:1;min-width:140px" placeholder="${t('top')}" value="${E(S.top[k]||'')}" onchange="setTop(this.value)"><input id=gc placeholder="${t('cm')}"></div>`
++tbl([t('name'),t('grades'),'+'],sts().filter(u=>u.group==gs).map(u=>[E(u.name),S.grades.filter(x=>x.s==u.id&&x.j==me.subj&&x.d==cd).map(x=>chip(x.g+(x.c?` <small class=mu>${E(x.c)}</small>`:''))).join(''),`<select onchange="addG(${u.id},this.value)"><option value="">+</option>${O([5,4,3,2].map(g=>[g,g]))}</select>`])))+card(t('hist'),hist())};
+V.hw=()=>{const R=RS(me),T=R.includes('teacher'),St=R.includes('student'),P=St||R.includes('parent'),K=ME();
+return (T?card(t('hw')+' · '+E(me.subj||'—'),`<div class=row><select id=hg>${O(TG().map(g=>[g.id,E(g.name)]))}</select><input id=hd type=date><input id=hx style="flex:1;min-width:140px" placeholder="${t('msg')}"><button class=pr onclick=addHw()>${t('add')}</button></div>`):'')
++card(t('hw'),S.hw.filter(x=>x.tech==me.tech&&(P?x.group==K.group:!T||x.by==me.name)).slice().reverse().map(x=>{const q=S.sub.filter(s=>s.h==x.id),mine=q.find(s=>s.u==K.id);
+return `<div class=rep><b>${E(x.subj)}</b> ${chip(gn(x.group))} ${x.due?chip(t('due')+' '+E(x.due)):''} <small class=mu>${x.t}</small> ${T&&x.by==me.name?DB('h',x.id):''}<p>${E(x.txt)}</p>`
++(P?(mine?`<p>${chip(SV('check')+t('done'))}${mine.g?chip(mine.g):''}</p>`:St?`<div class=row><input id=sb${x.id} style="flex:1;min-width:140px" placeholder="${t('msg')}"><button class=pr onclick="subm(${x.id})">${t('subm')}</button></div>`:''):'')
++(T?q.map(s=>`<div class=rep>${E(rn(s.u))}: ${E(s.txt)} <select onchange="gradeS(${x.id},${s.u},this.value)"><option value="">${s.g||'+'}</option>${O([5,4,3,2].map(g=>[g,g]))}</select></div>`).join(''):'')+'</div>'}).join('')||none())};
+V.sched=()=>{const R=RS(me),P=R.includes('student')||R.includes('parent'),g=P?ME().group:gs,w=new Date();w.setDate(w.getDate()-(w.getDay()+6)%7);
+const dt=[0,1,2,3,4].map(i=>ymd(new Date(w.getFullYear(),w.getMonth(),w.getDate()+i))),
+c=(d,n)=>{const b=S.sch.find(x=>x.g==g&&x.d==d&&x.n==n)||{},z=S.rp.find(x=>x.g==g&&x.date==dt[d-1]&&x.n==n),y=z||b;return y.j?`<div class="${z?'sw':''}"><b>${E(y.j)}</b><br><small class=mu>${E(y.tc)} · ${E(y.r)}</small>${z?' '+chip(t('swap'))+(isD()?DB('r',S.rp.indexOf(z)):''):''}</div>`:'—'};
+return card(t('sched')+' · '+gn(g),(P?'':`<div class=row style="margin-bottom:8px"><select onchange="gs=+this.value;draw()">${O(TG().map(x=>[x.id,E(x.name)]),gs)}</select></div>`)+tbl([t('pair'),...dt.map(x=>I({weekday:'short'}).format(new Date(x+'T12:00:00'))+' '+x.slice(8))],[1,2,3].map(n=>[n+'<br><small class=mu>'+E(S.bl[n-1]||'')+'</small>',...[1,2,3,4,5].map(d=>c(d,n))])))
++(isD()?card(t('swap'),`<div class=row><input id=rd type=date><select id=rn>${O([1,2,3].map(x=>[x,x]))}</select><input id=rj placeholder="${t('subj')}"><select id=rc>${O(S.users.filter(u=>u.tech==me.tech&&RS(u).includes('teacher')).map(u=>[E(u.name),E(u.name)]))}</select><input id=rr placeholder="${t('room')}"><input type=hidden id=rg value="${g}"><button class=pr onclick=addRp()>${t('add')}</button></div>`):'')};
+V.dash=()=>{const s=sts(),gr=TG().map(g=>{const ids=s.filter(u=>u.group==g.id).map(u=>u.id),k=Object.keys(S.att).filter(x=>ids.includes(+x.split('|')[1])),m=S.grades.filter(x=>ids.includes(x.s)),ab=k.filter(x=>S.att[x]=='a').length;return{n:E(g.name),pc:Math.round(100*(k.length-ab)/(k.length||1)),av:+(m.reduce((a,x)=>a+x.g,0)/(m.length||1)).toFixed(1),ab}}),
+av=f=>gr.reduce((a,g)=>a+g[f],0)/(gr.length||1);let l=100;
+const tr=[...Array(7)].map((_,i)=>{const d=ymd(new Date(Date.now()-(6-i)*864e5)),k=s.map(u=>S.att[d+'|'+u.id]).filter(Boolean);return k.length?(l=Math.round(100*k.filter(x=>x!='a').length/k.length)):l}),
+ac=S.users.filter(u=>u.tech==me.tech&&RS(u).includes('teacher')).map(u=>[E(u.name.split(' ')[0]),S.grades.filter(x=>x.j==u.subj).length+S.reports.filter(r=>r.by==u.name).length]);
+return stat([[t('students'),s.length],[t('pct'),Math.round(av('pc'))+'%'],[t('avg'),av('av').toFixed(1)],[t('a'),gr.reduce((a,g)=>a+g.ab,0)]])
++card(t('pct'),bar(gr.map(g=>[g.n,g.pc])))+card(t('avg'),bar(gr.map(g=>[g.n,g.av]),5,''))
++card(t('trend'),`<svg class=tl viewBox="-8 -4 316 84" width=100%><polyline points="${tr.map((v,i)=>i*50+','+(76-v*.7)).join(' ')}" fill=none stroke="var(--pr)" stroke-width=3 stroke-linejoin=round pathLength=1 />${tr.map((v,i)=>`<circle cx=${i*50} cy=${76-v*.7} r=4 fill="var(--pr)"/>`).join('')}</svg>`)
++card(t('prob'),gr.filter(g=>g.pc<90||g.av<3.8).map(g=>chip(`${SV('warn')}${g.n}: ${g.pc}% · ${g.av}`)).join('')||none())
++card(t('act'),bar(ac,Math.max(1,...ac.map(a=>a[1])),''))+card(t('hist'),hist())};
+/* anti-abuse (client side) */
+let LKT=0,FC=0,ck=[],fz=0;
+const LKS=()=>{try{return JSON.parse(localStorage.getItem('etk'))||{}}catch(e){return{}}},LKW=m=>{try{if(Object.keys(m).length>200)m={'*':m['*']||{c:0,u:0,t:0}};localStorage.setItem('etk',JSON.stringify(m))}catch(e){}},lkn=()=>'u:'+(($('#lg')||{}).value||'').trim().toLowerCase().slice(0,60),
+gate=()=>{const n=Date.now();if(($('#hp')||{}).value)return false;const m=LKS(),u=Math.max((m['*']||{}).u||0,(m[lkn()]||{}).u||0);if(n<u){LKT=u;$('#er').textContent=t('ddos')+Math.ceil((u-n)/1e3)+'s';return false}return true},
+fail=()=>{S.lg.push({l:($('#lg')||{}).value||'?',ok:0,t:NW()});S.lg=S.lg.slice(-100);save();const m=LKS(),n=Date.now();let u=0;for(const [k,th] of [[lkn(),5],['*',12]]){const r=m[k]=m[k]||{c:0,u:0,t:0};if(n-r.t>9e5)r.c=0;r.t=n;r.c++;if(r.c>=th){r.u=n+Math.min(9e5,3e4*2**(r.c-th));u=Math.max(u,r.u)}}LKW(m);LKT=u;$('#er').textContent=u?t('ddos')+Math.ceil((u-n)/1e3)+'s':t('bad')},
+toast=m=>{const d=document.createElement('div');d.className='tt';d.innerHTML=m.startsWith('✓ ')?SV('check')+E(m.slice(2)):E(m);document.body.append(d);setTimeout(()=>d.remove(),2600)},
+lim=e=>{const n=Date.now();if(n<fz){e.stopPropagation();e.preventDefault();return}ck=ck.filter(x=>n-x<3e3);ck.push(n);if(ck.length>14){fz=n+5e3;toast(t('ddos')+'5s');e.stopPropagation();e.preventDefault()}};
+addEventListener('click',e=>{if(e.target.closest&&e.target.closest('button'))lim(e)},true);
+addEventListener('keydown',e=>{if(e.key=='Enter'&&e.target.tagName=='INPUT')lim(e)},true);
+addEventListener('input',e=>{const v=e.target;if(v.type!='file'&&v.value&&v.value.length>500)v.value=v.value.slice(0,500)});
+addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('button');if(!b||b.disabled)return;const r=b.getBoundingClientRect(),s=Math.max(r.width,r.height)*2,p=document.createElement('span');p.className='rp';p.style.cssText=`width:${s}px;height:${s}px;left:${e.clientX-r.left-s/2}px;top:${e.clientY-r.top-s/2}px`;b.append(p);setTimeout(()=>p.remove(),600)});
+addEventListener('storage',e=>{if(e.key!='etx'||!e.newValue||(!MO&&/INPUT|TEXTAREA|SELECT/.test((document.activeElement||{}).tagName)))return;const n0=S.msgs.length;S=JSON.parse(e.newValue);const nm0=S.msgs.slice(n0).filter(m=>me&&m.by!=me.name&&mgRooms().some(r=>r[0]==m.room)).pop();if(nm0&&document.hidden)ntf(nm0.by,nm0.txt||(nm0.f&&nm0.f.n)||'');if(me)me=S.users.find(u=>u.id==me.id)||null;draw();if(MO)mgRender()});
+
+
+const X2={ads:'Реклама|Reklama|Ads',sure:'Точно?|Aminmisiz?|Sure?',del:'Удалено|O‘chirildi|Deleted',rm:'Удалить|O‘chirish|Delete',all:'Все техникумы|Barcha texnikumlar|All colleges',adt:'Заголовок|Sarlavha|Title',adx:'Текст рекламы|Reklama matni|Ad text',adu:'Ссылка https://…|Havola https://…|Link https://…',vw:'Показы|Ko‘rsatuvlar|Views',ck:'Клики|Bosishlar|Clicks',pic:'Выберите чат|Chatni tanlang|Select a chat',mem:'участников|a’zo|members',on:'Вкл|Yoqilgan|On',off:'Выкл|O‘chiq|Off'};
+Object.entries(X2).forEach(([k,v])=>v.split('|').forEach((s,i)=>L[['ru','uz','en'][i]][k]=s));
+ICO.ch='<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linejoin=round><path d="M4 5h16v11H10l-5 4v-4H4z"/></svg>';ICO.pl='<svg viewBox="0 0 24 24" fill=currentColor><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>';
+if(!S.ads){S.ads=[];S.rd={};save()}
+let dq='',AI='',MO=0,mr='';const AS=new Set();
+const DB=(k,id)=>k=='u'&&id==me.id?'':`<button class=dgb title="${t('rm')}" onclick="dl('${k}',${id},this)">${SV('x',1)}</button>`;
+function dl(k,id,b){const q=k+id;if(dq!=q){dq=q;const o=b.innerHTML;b.innerHTML=t('sure');b.classList.add('dg');setTimeout(()=>{if(dq==q){dq='';b.innerHTML=o;b.classList.remove('dg')}},3e3);return}dq='';
+const gone=ids=>{S.grades=S.grades.filter(x=>!ids.includes(x.s));S.sub=S.sub.filter(x=>!ids.includes(x.u));Object.keys(S.att).forEach(a=>{if(ids.includes(+a.split('|')[1]))delete S.att[a]})};
+if(k=='u'){const u=S.users.find(x=>x.id==id),ids=S.users.filter(x=>x.id==id||(x.role=='parent'&&(x.kids||[x.kid]).every(k=>k==id))).map(x=>x.id);if(!u)return;S.users.forEach(x=>{if(x.kids){x.kids=x.kids.filter(k=>k!=id);if(x.kid==id)x.kid=x.kids[0]}});S.users=S.users.filter(x=>!ids.includes(x.id));gone(ids);LG(t('del')+': '+u.name)}
+else if(k=='g'){const w=(S.groups.find(x=>x.id==id)||{}).name;S.groups=S.groups.filter(x=>x.id!=id);S.users.forEach(u=>{if(u.group==id)u.group=0});S.sch=S.sch.filter(x=>x.g!=id);S.rp=S.rp.filter(x=>x.g!=id);S.hw=S.hw.filter(x=>x.group!=id);S.msgs=S.msgs.filter(x=>x.room!='g'+id);if(gs==id)gs=fg();LG(t('del')+': '+w)}
+else if(k=='t'){const gi=S.groups.filter(g=>g.tech==id).map(g=>g.id),ids=S.users.filter(u=>u.tech==id).map(u=>u.id);gone(ids);S.users=S.users.filter(u=>u.tech!=id);S.sch=S.sch.filter(x=>!gi.includes(x.g));['groups','msgs','news','hw','reports','rp','log'].forEach(c=>S[c]=S[c].filter(x=>x.tech!=id));S.ads=S.ads.filter(a=>a.tech!=id);S.techs=S.techs.filter(x=>x.id!=id)}
+else if(k=='a')S.ads=S.ads.filter(x=>x.id!=id);
+else if(k=='n')S.news.splice(id,1);
+else if(k=='r')S.rp.splice(id,1);else if(k=='x')S.mt=S.mt.filter(x=>x.id!=id);else if(k=='q')S.qz=S.qz.filter(x=>x.id!=id);else if(k=='e')S.ev.splice(id,1);else if(k=='p')S.pl=S.pl.filter(x=>x.id!=id);
+else if(k=='h'){S.hw=S.hw.filter(x=>x.id!=id);S.sub=S.sub.filter(x=>x.h!=id)}
+else if(k=='m'){S.msgs=S.msgs.filter(x=>x.id!=id);try{localStorage.removeItem('etf'+id)}catch(e){}}
+save();k=='m'?mgRender():draw()}
+V.news=()=>(isD()?card(t('news'),`<div class=row><input id=nw style="flex:1" placeholder="${t('msg')}"><button class=pr onclick=addNews()>${t('send')}</button></div>`):'')+card(t('news'),S.news.filter(x=>x.tech==me.tech).slice().reverse().map(x=>`<div class=rep><b>${E(x.by)}</b> <small class=mu>${x.t}</small> ${isD()?DB('n',S.news.indexOf(x)):''}<p>${E(x.txt)}</p></div>`).join('')||none());
+/* ads */
+function adImg(f,cb){if(!f)return;const r=new FileReader();r.onload=()=>{const i=new Image();i.onload=()=>{const k=Math.min(1,640/i.width),c=document.createElement('canvas');c.width=i.width*k;c.height=i.height*k;c.getContext('2d').drawImage(i,0,0,c.width,c.height);cb(c.toDataURL('image/jpeg',.7))};i.src=r.result};r.readAsDataURL(f)}
+function addAd(){const v=['at','ax','au'].map(i=>$('#'+i).value.trim());if(!v[0]||!/^https?:\/\//i.test(v[2]))return toast('https://…');S.ads.push({id:Date.now(),title:v[0],txt:v[1],url:v[2],img:AI,tech:+$('#ar').value,from:$('#af').value,to:$('#ae').value,max:+$('#am').value||0,on:1,v:0,c:0});AI='';save();draw()}
+function adT(id){const a=S.ads.find(x=>x.id==id);a.on=!a.on;save();draw()}
+function adC(id){const a=S.ads.find(x=>x.id==id);if(a){a.c++;adS(a,'c');save()}}
+const adH=()=>{if(me.role=='admin')return '';const q=S.ads.filter(a=>a.on&&(!a.tech||a.tech==me.tech)&&(!a.from||a.from<=D)&&(!a.to||a.to>=D)&&(!a.max||a.v<a.max));if(!q.length)return '';const a=q[Math.floor(Date.now()/3e4)%q.length];if(!AS.has(a.id)){AS.add(a.id);a.v++;adS(a,'v');save()}return `<a class=ad href="${/^https?:\/\//i.test(a.url)?E(a.url):'#'}" target=_blank rel="noopener sponsored" onclick="adC(${a.id})">${a.img?`<img src="${a.img}">`:''}<div><small class=mu>${t('ads')}</small><b>${E(a.title)}</b><span>${E(a.txt)}</span></div></a>`};
+V.ads=()=>card(t('ads'),`<div class=row><input id=at placeholder="${t('adt')}"><input id=ax style="flex:1;min-width:160px" placeholder="${t('adx')}"><input id=au placeholder="${t('adu')}"><select id=ar>${O([[0,t('all')],...S.techs.map(x=>[x.id,E(x.name)])])}</select><input id=af type=date title=from><input id=ae type=date title=to><input id=am type=number min=0 placeholder=max style="width:80px"></div><div class=row style="margin-top:8px"><input type=file accept="image/*" onchange="adImg(this.files[0],d=>{AI=d;$('#ap').src=d;$('#ap').style.display='block'})"><img id=ap style="display:none;height:56px;border-radius:8px"><button class=pr onclick=addAd()>${t('add')}</button></div>`)
++card(t('ads'),tbl([t('adt'),t('techs'),t('vw'),t('ck'),'CTR','7d',''],S.ads.map(a=>[E(a.title),a.tech?E((S.techs.find(x=>x.id==a.tech)||{}).name||'—'):t('all'),a.v,a.c,(a.v?Math.round(100*a.c/a.v):0)+'%',spark(a),`<button class="tg${a.on?' on':''}" onclick="adT(${a.id})">${a.on?t('on'):t('off')}</button> ${DB('a',a.id)}`])));
+/* messenger */
+const mgRooms=()=>[['c',t('chc')],['d',t('chd')],['t',t('cht')],...TG().map(g=>['g'+g.id,g.name])].filter(r=>acc(r[0])).concat(dmr()),
+rmsg=r=>S.msgs.filter(m=>m.tech==me.tech&&m.room==r),
+unr=r=>rmsg(r).filter(m=>m.by!=me.name&&m.id>(S.rd[me.id+'|'+r]||0)).length,
+hue=s=>[...s].reduce((a,c)=>a+c.charCodeAt(0)*7,0)%360,
+avt=n=>`<i class=av style="background:hsl(${hue(n)},55%,45%)">${E((n.match(/[\p{L}\p{N}]+/gu)||['?']).map(w=>w[0]).join('').slice(0,2).toUpperCase())}</i>`,
+memb=r=>S.users.filter(u=>u.tech==me.tech&&(r=='c'?RS(u).includes('curator'):r=='d'?RS(u).some(x=>x=='director'||x=='deputy'):r=='t'?RS(u).includes('teacher'):u.group==r.slice(1))).length,
+bub=m=>{const o=m.by==me.name,s=m.f&&(FD[m.id]||ls('etf'+m.id)),y=m.f?m.f.ty:'';return `<div class="bb${o?' me':''}" onclick="this.classList.toggle('sel')">${o?'':`<b style="color:hsl(${hue(m.by)},60%,42%)">${E(m.by)} ${chip(t(m.role))}</b>`}${m.rp?`<div class=q>${E(m.rp.by)}: ${E(m.rp.txt)}</div>`:''}${m.txt?E(m.txt):''}${m.f?(!s?`<div>${PC} ${E(m.f.n)}</div>`:y.startsWith('image/')?`<img src="${s}">`:y.startsWith('audio/')?`<audio controls src="${s}"></audio>`:`<a href="${s}" download="${E(m.f.n)}">${PC} ${E(m.f.n)}</a>`):''}<small>${m.t.slice(11)} <span class=xd onclick="event.stopPropagation();rep(${m.id})">${SV('reply',1)}</span><span class=xd onclick="event.stopPropagation();pinM(${m.id})">${SV('pin')}</span>${o||isD()?` <span class=xd onclick="event.stopPropagation();dl('m',${m.id},this)">${SV('x',1)}</span>`:''}</small></div>`};
+function mgOpen(){MO=1;mr='';if(innerWidth>=720&&!cr)cr=(mgRooms()[0]||[])[0]||'';document.body.style.overflow='hidden';mgRender()}
+function mgClose(){MO=0;mr='';const o=$('#mg');if(o)o.remove();document.body.style.overflow='';fabU()}
+function mgSel(r){cr=r;mr=r;mgRender()}
+function mgRender(){if(!me)return mgClose();let o=$('#mg');if(!o){o=document.createElement('div');o.id='mg';document.body.append(o)}
+const R=mgRooms(),v=($('#mt')||{}).value||'',fo=(document.activeElement||{}).id=='mt';if(cr&&!R.some(r=>r[0]==cr))cr='';
+const m=cr?rmsg(cr):[],ls2=m.length?m[m.length-1].id:0;if(cr&&(innerWidth>=720||mr)&&(S.rd[me.id+'|'+cr]||0)<ls2){S.rd[me.id+'|'+cr]=ls2;save()}
+let dd='',b='';m.forEach(x=>{const d=x.t.slice(0,10);if(d!=dd){dd=d;b+=`<div class=dd>${d==D?t('overview'):I({day:'numeric',month:'long'}).format(new Date(d+'T12:00:00'))}</div>`}b+=bub(x)});
+const nm=(R.find(r=>r[0]==cr)||[])[1]||'';o.className='mg'+(mr?' op':'');
+o.innerHTML=`<aside class=ml><div class=mh><b style="flex:1">${t('chat')}</b><select class=sq onchange="dmNew(this.value)"><option value="">+</option>${O(S.users.filter(u=>u.tech==me.tech&&u.id!=me.id&&u.role!='admin').map(u=>[u.id,E(u.name)]))}</select><button onclick=mgClose() aria-label=close>${SV('x',1)}</button></div><div class=mls>${R.map(r=>{const l=rmsg(r[0]).slice(-1)[0],u=unr(r[0]);return `<div class="mi${r[0]==cr?' on':''}" onclick="mgSel('${r[0]}')">${avt(r[1])}<div><b>${E(r[1])}</b><small>${l?E(l.by.split(' ')[0])+': '+E(l.txt||(l.f&&l.f.n)||''):t('none')}</small></div>${u?`<em>${u}</em>`:''}</div>`}).join('')}</div></aside>`
++`<section class=mc>${cr?`<div class=mh><button class=bk onclick="mr='';mgRender()">${SV('l',1)}</button>${avt(nm)}<div><b>${E(nm)}</b><small>${/^p/.test(cr)?'':memb(cr)+' '+t('mem')}</small></div><input class=sq placeholder="" style="padding-left:32px;background:url(data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='gray'%20stroke-width='2'%20stroke-linecap='round'%3E%3Ccircle%20cx='11'%20cy='11'%20r='7'/%3E%3Cpath%20d='M20%2020l-4-4'/%3E%3C/svg%3E)%20no-repeat%2010px%20center/15px" oninput="mgF(this.value)"><button onclick=mgClose()>${SV('x',1)}</button></div>${pinH()}<div class=mb id=mb>${b||`<div class=dd>${t('none')}</div>`}</div>${RP?`<div class=rb>${SV('reply',1)} ${E(RP.by)}: ${E(RP.txt)} <span onclick="RP=null;mgRender()">${SV('x',1)}</span></div>`:''}<div class=mf><label class=at>${PC}<input id=mf type=file hidden></label><input id=mt placeholder="${t('msg')}" onkeydown="if(event.key=='Enter')sendM()"><button class="pr sd" onclick=sendM() aria-label=send>${ICO.pl}</button></div>`:`<div class=em>${t('pic')}</div>`}</section>`;
+const mb=$('#mb');if(mb)mb.scrollTop=mb.scrollHeight;if(cr&&$('#mt')){$('#mt').value=v;if(fo)$('#mt').focus()}fabU()}
+function sendM(){const x=$('#mt').value.trim(),f=$('#mf').files[0];if((!x&&!f)||!mgRooms().some(r=>r[0]==cr))return;
+const add=a=>{const id=Date.now();S.msgs.push({id,room:cr,tech:me.tech,by:me.name,role:me.role,t:NW(),txt:x,rp:RP,f:a&&{n:f.name,ty:f.type}});if(a){FD[id]=a;try{localStorage.setItem('etf'+id,a)}catch(e){}}$('#mt').value='';RP=null;save();mgRender();$('#mt').focus()};
+if(!f)return add();if(f.size>1.5e6)return toast('≤ 1.5 MB');const r=new FileReader();r.onload=()=>add(r.result);r.readAsDataURL(f)}
+function fabU(){let b=$('#fab');if(!b){b=document.createElement('button');b.id='fab';b.className='pr';b.setAttribute('aria-label','chat');b.onclick=mgOpen;document.body.append(b)}
+if(!me&&MO)return mgClose();const on=me&&me.role!='admin'&&mgRooms().length&&!MO;b.style.display=on?'flex':'none';const u=on?mgRooms().reduce((a,r)=>a+unr(r[0]),0):0;b.innerHTML=ICO.ch+(u?`<i>${u}</i>`:'')}
+addEventListener('keydown',e=>{if(e.key=='Escape'&&MO)mgClose()});
+
+
+const H=s=>{s='etx$'+s;let a=3735928559,b=1103547991;for(let i=0,c;i<s.length;i++){c=s.charCodeAt(i);a=Math.imul(a^c,2654435761);b=Math.imul(b^c,1597334677)}a=Math.imul(a^a>>>16,2246822507)^Math.imul(b^b>>>13,3266489909);b=Math.imul(b^b>>>16,2246822507)^Math.imul(a^a>>>13,3266489909);return 'h:'+(4294967296*(2097151&b)+(a>>>0)).toString(36)};
+const SHK=[],SHI=[];(()=>{for(let n=2,c=0;c<64;n++){let p=1;for(let d=2;d*d<=n;d++)if(n%d==0){p=0;break}if(p){if(c<8)SHI[c]=(Math.sqrt(n)%1)*4294967296|0;SHK[c]=(Math.cbrt(n)%1)*4294967296|0;c++}}})();
+const SW=new Int32Array(64),IV=()=>Int32Array.from(SHI),IT=60000;let DUM='';
+function cmp(h,w){for(let i=0;i<16;i++)SW[i]=w[i];for(let i=16;i<64;i++){const a=SW[i-15],b=SW[i-2];SW[i]=(SW[i-16]+(((a>>>7)|(a<<25))^((a>>>18)|(a<<14))^(a>>>3))+SW[i-7]+(((b>>>17)|(b<<15))^((b>>>19)|(b<<13))^(b>>>10)))|0}
+ let a=h[0],b=h[1],c=h[2],d=h[3],e=h[4],f=h[5],g=h[6],k=h[7];
+ for(let i=0;i<64;i++){const t1=(k+(((e>>>6)|(e<<26))^((e>>>11)|(e<<21))^((e>>>25)|(e<<7)))+((e&f)^(~e&g))+SHK[i]+SW[i])|0,t2=((((a>>>2)|(a<<30))^((a>>>13)|(a<<19))^((a>>>22)|(a<<10)))+((a&b)^(a&c)^(b&c)))|0;k=g;g=f;f=e;e=(d+t1)|0;d=c;c=b;b=a;a=(t1+t2)|0}
+ h[0]+=a;h[1]+=b;h[2]+=c;h[3]+=d;h[4]+=e;h[5]+=f;h[6]+=g;h[7]+=k;return h}
+const wd=(b,o)=>{const w=new Int32Array(16);for(let i=0;i<16;i++)w[i]=(b[o+4*i]<<24)|(b[o+4*i+1]<<16)|(b[o+4*i+2]<<8)|b[o+4*i+3];return w},
+fin=(h,m,x)=>{const n=m.length,L=((n+9+63)>>6)<<6,b=new Uint8Array(L);b.set(m);b[n]=128;const bits=(n+x)*8;b[L-4]=bits>>>24;b[L-3]=bits>>>16;b[L-2]=bits>>>8;b[L-1]=bits;for(let o=0;o<L;o+=64)cmp(h,wd(b,o));return h},
+tb=h=>{const o=new Uint8Array(32);h.forEach((v,i)=>{o[4*i]=v>>>24;o[4*i+1]=v>>>16;o[4*i+2]=v>>>8;o[4*i+3]=v});return o},
+hex=b=>[...b].map(v=>v.toString(16).padStart(2,'0')).join('');
+function pbk(p,salt,it){let k=new TextEncoder().encode(p);if(k.length>64)k=tb(fin(IV(),k,0));const ip=new Uint8Array(64).fill(54),op=new Uint8Array(64).fill(92);k.forEach((v,i)=>{ip[i]^=v;op[i]^=v});
+ const is=cmp(IV(),wd(ip,0)),os=cmp(IV(),wd(op,0)),sc=new Uint8Array(salt.length+4);sc.set(salt);sc[sc.length-1]=1;
+ let u=fin(os.slice(),tb(fin(is.slice(),sc,64)),64);const T=u.slice(),w=new Int32Array(16);w[8]=-2147483648;w[15]=768;
+ for(let i=1;i<it;i++){w.set(u);const a=is.slice();cmp(a,w);w.set(a);u=os.slice();cmp(u,w);for(let j=0;j<8;j++)T[j]^=u[j]}
+ return tb(T)}
+const HP=p=>{const s=crypto.getRandomValues(new Uint8Array(16));return 'v2$'+IT+'$'+hex(s)+'$'+hex(pbk(p,s,IT))},
+PV=(u,p)=>{const q=u.pw||'';if(q.startsWith('v2$')){const a=q.split('$'),it=+a[1];if(!(it>0&&it<=1e6))return false;const x=hex(pbk(p,Uint8Array.from(a[2].match(/../g).map(h=>parseInt(h,16))),it)),y=a[3]||'';let d=x.length^y.length;for(let i=0;i<y.length;i++)d|=x.charCodeAt(i)^y.charCodeAt(i);return d==0}return q==H(p)},
+GP=()=>{const A='abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789';return [...crypto.getRandomValues(new Uint8Array(8))].map(x=>A[x%A.length]).join('')};
+
+const X3={e:'Уваж.|Sababli|Excused',req:'Заявки|Arizalar|Requests',lib:'Материалы|Materiallar|Materials',lgl:'Журнал входов|Kirishlar|Login log',exp:'Экспорт|Eksport|Export',ev:'События|Tadbirlar|Events',poll:'Опрос|So‘rovnoma|Poll',bell:'Звонки|Qo‘ng‘iroqlar|Bell times',nt:'Уведомления|Bildirishnomalar|Notifications',ttl:'Название|Nomi|Title',why:'Причина|Sabab|Reason',ok:'Принять|Qabul|Approve',no:'Отклонить|Rad etish|Reject',test:'Тест|Test|Quiz',camera:'Камера|Kamera|Camera',biom:'Face ID / биометрия|Face ID / biometrika|Face ID / biometrics',bioSetup:'Подключить Face ID|Face ID ulash|Set up Face ID',bioNo:'На этом устройстве Face ID/биометрия недоступна.|Bu qurilmada Face ID/biometrika mavjud emas.|Face ID/biometrics is unavailable on this device.',bioNeed:'Сначала войдите по паролю один раз и настройте Face ID в Профиле.|Avval parol bilan kiring va Profil bo‘limida Face ID ni sozlang.|Sign in with your password once and set up Face ID in Profile.',bioOk:'Face ID настроен.|Face ID sozlandi.|Face ID is ready.',bioErr:'Не удалось пройти биометрическую проверку.|Biometrik tekshiruvdan o‘tib bo‘lmadi.|Biometric verification failed.',scan:'Запустить камеру|Kamerani ishga tushirish|Start camera',stop:'Остановить|To‘xtatish|Stop',capture:'Сделать снимок|Surat olish|Capture',analyze:'Анализ ученика|O‘quvchini tahlil qilish|Analyze student',chooseStudent:'Выберите ученика|O‘quvchini tanlang|Select student',aiSummary:'AI-сводка|AI xulosasi|AI summary',security:'Камера доступна только директору. Пароли не показываются: для доступа используйте сброс временного пароля.|Kamera faqat direktor uchun. Parollar ko‘rsatilmaydi: kirish uchun vaqtinchalik parolni tiklang.|Camera is director-only. Passwords are never displayed; use a temporary password reset for access.'};
+Object.entries(X3).forEach(([k,v])=>v.split('|').forEach((x,i)=>L[['ru','uz','en'][i]][k]=x));
+if(!S.lg){S.lg=[];S.rq=[];S.mt=[];S.qz=[];S.ev=[];S.pl=[];S.pin={};S.bl=['08:30–09:50','10:00–11:20','11:30–12:50'];S.users.forEach(u=>{if(u.role=='parent'&&!u.kids)u.kids=[u.kid]})}
+S.users.forEach(u=>{if(!/^(h:|v2\$)/.test(u.pw))u.pw=H(u.pw)});S.users.forEach(u=>{if(u.role=='admin'&&u.pw==H('admin'))u.mc=1});save();
+let RP=null;
+const ntf=(a,b)=>{try{window.Notification&&Notification.permission=='granted'&&new Notification(a,{body:b,icon:'icon-192.png'})}catch(e){}},
+adS=(a,k)=>{a.ds=a.ds||{};(a.ds[D]=a.ds[D]||{v:0,c:0})[k]++},
+spark=a=>{const v=[...Array(7)].map((_,i)=>((a.ds||{})[ymd(new Date(Date.now()-(6-i)*864e5))]||{v:0}).v),m=Math.max(1,...v);return `<svg width=70 height=22>${v.map((x,i)=>`<rect x=${i*10} y=${22-x/m*22} width=8 height=${x/m*22} rx=2 fill="var(--pr)"/>`).join('')}</svg>`},
+kidSel=()=>me.role=='parent'&&(me.kids||[]).length>1?`<select onchange="me.kid=+this.value;save();draw()" style="margin-bottom:12px">${O(me.kids.map(k=>[k,E(rn(k))]),me.kid)}</select>`:'',
+dmr=()=>{const w=r=>/^p\d+-\d+$/.test(r)&&r.slice(1).split('-').includes(''+me.id),q=new Set(S.msgs.filter(m=>m.tech==me.tech&&w(m.room)).map(m=>m.room));if(w(cr))q.add(cr);return[...q].map(r=>[r,rn(r.slice(1).split('-').find(x=>x!=me.id))])},
+pinH=()=>{const m=S.msgs.find(x=>x.id==S.pin[cr]);return m?`<div class=pn><span>${SV('pin')} ${E(m.by)}: ${E((m.txt||(m.f&&m.f.n)||'').slice(0,80))}</span><span onclick="pinM(${m.id})">${SV('x',1)}</span></div>`:''};
+function dmNew(id){if(!id)return;const a=[+id,me.id].sort((x,y)=>x-y);cr='p'+a[0]+'-'+a[1];mr=cr;mgRender()}
+function rep(id){const m=S.msgs.find(x=>x.id==id);RP={by:m.by,txt:(m.txt||(m.f&&m.f.n)||'').slice(0,60)};mgRender();if($('#mt'))$('#mt').focus()}
+function pinM(id){S.pin[cr]==id?delete S.pin[cr]:S.pin[cr]=id;save();mgRender()}
+function mgF(q){q=q.toLowerCase();document.querySelectorAll('#mb .bb').forEach(b=>b.style.display=b.textContent.toLowerCase().includes(q)?'':'none')}
+function rst(id){const u=S.users.find(x=>x.id==id),p=GP();u.pw=HP(p);u.mc=1;save();$('#mk').textContent=u.login+' / '+p}
+const P0=V.prof;V.prof=()=>P0()+card(t('nt'),`<button onclick="window.Notification&&Notification.requestPermission().then(()=>toast('✓ OK'))">${t('nt')}</button>`)+card(t('biom'),`<p class=mu style="margin-bottom:8px">${t('security')}</p><button class=pr onclick="setupFaceID()">${t('bioSetup')}</button><p id=bio-msg class=mu></p>`)+(isD()||me.role=='admin'?card(t('lgl'),tbl([t('login'),'',''],S.lg.slice(-15).reverse().map(x=>[E(x.l),x.ok?SV('check',1):SV('x',1),x.t]))):'');
+V.req=()=>{const R=RS(me),P=R.includes('student')||R.includes('parent'),K=ME(),q=S.rq.filter(x=>x.tech==me.tech&&(P?x.u==K.id:isD()||(S.users.find(u=>u.id==x.u)||{}).group==me.group)).slice().reverse();
+return (P?card(t('req'),`<div class=row><input id=qd type=date value="${D}"><input id=qx style="flex:1;min-width:140px" placeholder="${t('why')}"><label class=at>${PC}<input id=qf type=file hidden></label><button class=pr onclick=addRq()>${t('send')}</button></div>`):'')+card(t('req'),q.map(x=>`<div class=rep><b>${E(rn(x.u))}</b> ${chip(x.d)} ${chip(x.st=='ok'?SV('check',1):x.st=='no'?SV('x',1):'…')}${ls('etr'+x.id)?` <a href="${ls('etr'+x.id)}" download="${E(x.fn)}">${PC} ${E(x.fn)}</a>`:''}<p>${E(x.txt)}</p>${!P&&x.st=='new'?`<button class=pr onclick="rqs(${x.id},'ok')">${t('ok')}</button> <button onclick="rqs(${x.id},'no')">${t('no')}</button>`:''}</div>`).join('')||none())};
+function addRq(){const x=$('#qx').value.trim(),f=$('#qf').files[0],id=Date.now(),K=ME(),A=a=>{S.rq.push({id,tech:me.tech,u:K.id,d:$('#qd').value||D,txt:x,fn:f?f.name:'',st:'new'});if(a)try{localStorage.setItem('etr'+id,a)}catch(e){}save();draw()};if(!x)return;if(!f)return A();if(f.size>1e6)return toast('≤ 1 MB');const r=new FileReader();r.onload=()=>A(r.result);r.readAsDataURL(f)}
+function rqs(id,st){const x=S.rq.find(q=>q.id==id);x.st=st;if(st=='ok')S.att[x.d+'|'+x.u]='e';LG(t('req')+': '+rn(x.u)+' '+st);save();draw()}
+const exC=()=>card(t('exp'),`<div class=row><button onclick=exX()>Excel (CSV)</button><button onclick=print()>PDF</button></div>`);
+function exX(){const P=RS(me).some(r=>r=='student'||r=='parent'),U=P?[ME()]:sts(),rows=[[t('group'),t('name'),t('avg'),t('pct'),t('a')],...U.map(u=>{const g=S.grades.filter(x=>x.s==u.id),k=Object.keys(S.att).filter(x=>x.endsWith('|'+u.id)),a=k.filter(x=>S.att[x]=='a').length;return[(S.groups.find(x=>x.id==u.group)||{}).name||'',u.name,(g.reduce((s,x)=>s+x.g,0)/(g.length||1)).toFixed(1),Math.round(100*(k.length-a)/(k.length||1)),a]})],csv='\ufeff'+rows.map(r=>r.map(c=>'"'+String(c).replace(/"/g,'""')+'"').join(';')).join('\n');claude.use('downloads').then(d=>d&&d.save({filename:'etexnikum.csv',data:csv})).catch(()=>{})}
+['dash','mygrades','grades'].forEach(k=>{const f=V[k];V[k]=()=>f()+exC()});
+const N0=V.news;V.news=()=>N0()+card(t('ev'),(isD()?`<div class=row><input id=ed type=date><input id=et style="flex:1;min-width:140px" placeholder="${t('ttl')}"><button class=pr onclick=addEv()>${t('add')}</button></div>`:'')+S.ev.filter(x=>x.tech==me.tech).slice().sort((a,b)=>a.date<b.date?-1:1).map(x=>`<div class=rep>${chip(x.date)} ${E(x.title)} ${isD()?DB('e',S.ev.indexOf(x)):''}</div>`).join(''))
++card(t('poll'),(isD()?`<div class=row><input id=pq style="flex:1;min-width:140px" placeholder="${t('poll')}"><input id=po style="flex:1;min-width:140px" placeholder="A ; B ; C"><button class=pr onclick=addPl()>${t('add')}</button></div>`:'')+S.pl.filter(x=>x.tech==me.tech).map(p=>{const n=p.o.map((_,i)=>Object.values(p.v).filter(x=>x==i).length),T=Math.max(1,n.reduce((a,b)=>a+b,0));return `<div class=rep><b>${E(p.q)}</b> ${isD()?DB('p',p.id):''}${p.o.map((o,i)=>`<div class=br onclick="vote(${p.id},${i})" style="cursor:pointer"><span>${E(o)}</span><div><i style="width:${n[i]/T*100}%"></i></div><b>${n[i]}${p.v[me.id]==i?' ✔':''}</b></div>`).join('')}</div>`}).join(''));
+function addEv(){const d=$('#ed').value,v=$('#et').value.trim();if(d&&v){S.ev.push({tech:me.tech,date:d,title:v});save();draw()}}
+function addPl(){const q=$('#pq').value.trim(),o=$('#po').value.split(';').map(x=>x.trim()).filter(Boolean);if(q&&o.length>1){S.pl.push({id:Date.now(),tech:me.tech,q,o,v:{}});save();draw()}}
+function vote(id,i){S.pl.find(p=>p.id==id).v[me.id]=i;save();draw()}
+const SC=V.sched;V.sched=()=>SC()+(isD()?card(t('bell'),`<div class=row>${S.bl.map((x,i)=>`<input value="${E(x)}" onchange="S.bl[${i}]=this.value;save();draw()" style="width:140px">`).join('')}</div>`):'');
+const S2=V.students;V.students=()=>S2()+card(t('parent'),sts().filter(u=>u.group==me.group).map(u=>S.users.filter(p=>p.role=='parent'&&(p.kids||[]).includes(u.id)).map(p=>chip(E(p.name)+' → '+E(u.name)+' '+DB('u',p.id))).join('')).join('')+`<div class=row style="margin-top:8px">${inp('pa',['name','login','pw'])}<select id=pa3>${O(sts().filter(u=>u.group==me.group).map(u=>[u.id,E(u.name)]))}</select><button class=pr onclick=addPar()>${t('add')}</button></div><p id=pm2 class=mu></p>`);
+function addPar(){const v=[0,1,2].map(i=>$('#pa'+i).value.trim()),k=+$('#pa3').value;if(!v[1]||!k)return;let p=S.users.find(u=>u.login==v[1]),m;if(p){if(p.role!='parent'){$('#pm2').textContent=t('taken');return}if(!p.kids.includes(k))p.kids.push(k);m=t('made')+': '+p.login}else{if(!v[0])return;const w=v[2]||''+(1000+Math.floor(Math.random()*9000));S.users.push({id:Date.now(),name:v[0],login:v[1],pw:H(w),role:'parent',tech:me.tech,kid:k,kids:[k]});m=t('made')+': '+v[1]+' / '+w}save();draw();$('#pm2').textContent=m}
+V.lib=()=>{const R=RS(me),T=R.includes('teacher'),St=R.includes('student'),P=St||R.includes('parent'),K=ME(),ok=x=>x.tech==me.tech&&(P?x.group==K.group:!T||x.by==me.name);
+return (T?card(t('lib'),`<div class=row><select id=lg2>${O(TG().map(g=>[g.id,E(g.name)]))}</select><input id=mtt placeholder="${t('ttl')}"><label class=at>${PC}<input id=mtf type=file hidden></label><button class=pr onclick=addMt()>${t('add')}</button></div><textarea id=qt placeholder="Вопрос | вар1 ; вар2 ; вар3 | 2" style="margin-top:8px"></textarea><p><button class=pr onclick=addQz()>${t('test')}</button></p>`):'')
++card(t('lib'),S.mt.filter(ok).map(x=>`<div class=rep><b>${E(x.title)}</b> ${chip(gn(x.group))} ${ls('etm'+x.id)?`<a href="${ls('etm'+x.id)}" download="${E(x.fn)}">${PC} ${E(x.fn)}</a>`:''} ${T?DB('x',x.id):''}</div>`).join('')||none())
++card(t('test'),S.qz.filter(ok).map(z=>{const r=z.res[K.id];return `<div class=rep><b>${E(z.title)}</b> ${chip(gn(z.group))} ${T?DB('q',z.id)+' '+chip(Object.keys(z.res).length):''}${P?(r!=null?chip(r+'%'):St?`<div>${z.qs.map((q,i)=>`<p>${E(q.q)}<br>${q.o.map((o,j)=>`<label><input type=radio name="q${z.id}_${i}" value=${j}> ${E(o)}</label> `).join('')}</p>`).join('')}<button class=pr onclick="qzs(${z.id})">${t('subm')}</button></div>`:''):''}</div>`}).join('')||none())};
+function addMt(){const f=$('#mtf').files[0],v=$('#mtt').value.trim(),id=Date.now();if(!v)return;const A=a=>{S.mt.push({id,tech:me.tech,group:+$('#lg2').value,by:me.name,title:v,fn:f?f.name:''});if(a)try{localStorage.setItem('etm'+id,a)}catch(e){}save();draw()};if(!f)return A();if(f.size>1e6)return toast('≤ 1 MB');const r=new FileReader();r.onload=()=>A(r.result);r.readAsDataURL(f)}
+function addQz(){const qs=$('#qt').value.split('\n').map(l=>l.split('|').map(x=>x.trim())).filter(a=>a.length>2).map(a=>({q:a[0],o:a[1].split(';').map(x=>x.trim()),a:+a[2]-1}));if(!qs.length)return;S.qz.push({id:Date.now(),tech:me.tech,group:+$('#lg2').value,by:me.name,subj:me.subj||'—',title:$('#mtt').value.trim()||t('test'),qs,res:{}});save();draw()}
+function qzs(id){const z=S.qz.find(x=>x.id==id),K=ME();let ok=0;z.qs.forEach((q,i)=>{const c=document.querySelector(`input[name="q${id}_${i}"]:checked`);if(c&&+c.value==q.a)ok++});const p=Math.round(100*ok/z.qs.length);z.res[K.id]=p;S.grades.push({s:K.id,j:z.subj,g:p>=90?5:p>=70?4:p>=50?3:2,d:D,c:t('test')});save();draw()}
+if('serviceWorker' in navigator&&/^https?:/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{});
+
+draw();
+</script><script>
+(()=>{
+const RED=matchMedia('(prefers-reduced-motion:reduce)').matches,Q=s=>document.querySelector(s),sec=()=>lang=='ru'?'с':'s',pad=n=>String(n).padStart(2,'0');
+const COOL=700;let NCD=0,RCD=0,K2='',tmr=0;
+const ld=Q('#ld');if(ld)setTimeout(()=>{ld.classList.add('out');setTimeout(()=>ld.remove(),450)},700);
+function cool(){
+ NCD=Date.now()+COOL;document.body.classList.add('cdw');
+ let p=Q('#cdp');
+ if(!p){p=document.createElement('div');p.id='cdp';p.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="12" cy="12" r="9" opacity=".25"/><path d="M21 12a9 9 0 0 0-9-9"/></svg>';document.body.append(p)}
+ p.classList.remove('out');clearTimeout(tmr);
+ tmr=setTimeout(()=>{document.body.classList.remove('cdw');p.classList.add('out');setTimeout(()=>{if(Date.now()>=NCD)p.remove()},400)},COOL)}
+addEventListener('click',e=>{const n=e.target.closest&&e.target.closest('nav button');if(!n||n.classList.contains('on'))return;
+ if(Date.now()<NCD){e.stopPropagation();e.preventDefault();const p=Q('#cdp');if(p){p.classList.remove('nd');void p.offsetWidth;p.classList.add('nd')}return}
+ cool()},true);
+function enter(){const m=Q('main');if(!m)return;m.classList.remove('fi','ld');void m.offsetWidth;m.classList.add('fi','ld');setTimeout(()=>m.classList.remove('fi','ld'),1100);
+ if(RED)return;
+ m.querySelectorAll('.st b').forEach(b=>{const x=b.textContent;if(!/^\d+$/.test(x)||+x<1)return;const n=+x,t0=performance.now(),f=now=>{const k=Math.min(1,(now-t0)/700);b.textContent=Math.round(n*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)};b.textContent=0;requestAnimationFrame(f)})}
+const tk=()=>{const c=Q('#clk');if(c){const d=new Date();c.textContent=pad(d.getHours())+':'+pad(d.getMinutes())+':'+pad(d.getSeconds())}};
+function clk(){const r=Q('header .row');if(!r||Q('#clk'))return;const c=document.createElement('span');c.id='clk';c.className='mu';r.prepend(c);tk()}
+setInterval(tk,1000);
+setInterval(()=>{const e=Q('#er');if(!e)return;const r=LKT-Date.now();if(r>0){e.textContent=t('ddos')+Math.ceil(r/1e3)+'s';e.dataset.l=1}else if(e.dataset.l){e.textContent='';delete e.dataset.l}},250);
+
+const DM=[[/^add\w*\(/,'plus'],[/^send\w*\(/,'send'],[/^exX\(/,'dl'],[/^print\(/,'pr'],[/me=null/,'out'],[/^qzs\(/,'check'],[/rqs\([^)]*'ok'/,'check'],[/rqs\([^)]*'no'/,'x'],[/mark\([^)]*'p'/,'check'],[/mark\([^)]*'a'/,'x'],[/mark\([^)]*'l'/,'clock']];
+function deco(r){(r||document).querySelectorAll('button[onclick]').forEach(b=>{if(b.querySelector('svg')||!b.textContent.trim())return;const o=b.getAttribute('onclick');for(const [x,k] of DM)if(x.test(o)){b.insertAdjacentHTML('afterbegin',SV(k));break}})}
+try{const m0=mgRender;mgRender=function(){m0.apply(this,arguments);deco(Q('.mg'));chatDeco()}}catch(e){}
+const d0=draw;draw=function(){if(me&&me.mc&&tab!='prof'&&nav(me).includes('prof'))tab='prof';const k=(me?me.id:0)+'|'+tab,ch=k!==K2;K2=k;d0.apply(this,arguments);clk();deco();hb();hint();beat();if(me&&me.mc&&tab=='prof'&&!Q('#mcb')){const mn=Q('main nav');if(mn){const d=document.createElement('div');d.id='mcb';d.className='card';d.style.borderColor='var(--no)';d.innerHTML=SV('warn')+E(t('mcm'));mn.after(d)}}if(ch)enter()};
+const s0=sendR;sendR=function(){const x=Q('#rx');
+ if(Date.now()<RCD){toast(({ru:'Подождите ',uz:'Kuting ',en:'Wait '})[lang]+Math.ceil((RCD-Date.now())/1e3)+sec());return}
+ if(!x||!x.value.trim()){if(x){x.classList.remove('shk');void x.offsetWidth;x.classList.add('shk');x.focus()}return}
+ const n=S.reports.length;s0();
+ if(S.reports.length>n){RCD=Date.now()+COOL;toast(({ru:'✓ Отчёт отправлен',uz:'✓ Hisobot yuborildi',en:'✓ Report sent'})[lang])}};
+
+Object.assign(SVP,{help:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7M12 17h.01"/>',dcheck:'<path d="M2 12.5l4.5 4.5L14 8.5M10 15.5l1.5 1.5L21 7"/>',chat:'<path d="M4 5h16v11H9l-5 4z"/>'});
+const li=()=>({ru:0,uz:1,en:2})[lang]||0,
+TT=[['Инструкция','Qo’llanma','Guide'],['Как пользоваться','Qanday foydalanish','How to use']],
+HT={
+general:['Вход по логину и паролю. Разделы — вкладки сверху (между ними пауза 0,7 с). Календарь выбирает день. Кнопка ? открывает эту инструкцию.','Login va parol bilan kiring. Bo’limlar — yuqoridagi tablar (0,7 s pauza). Kalendar kunni tanlaydi. ? tugmasi shu qo’llanmani ochadi.','Sign in with login and password. Sections are tabs on top (0.7 s pause between). The calendar picks the day. The ? button opens this guide.'],
+techs:['Платформа: добавляйте техникумы с директором (логин и пароль), блокируйте и удаляйте.','Platforma: direktorli texnikum qo’shing, bloklang yoki o’chiring.','Platform: add colleges with a director login, block or delete them.'],
+ads:['Рекламные баннеры: текст, ссылка, фото, даты и лимит показов. Видна статистика показов и кликов.','Reklama bannerlari: matn, havola, rasm, sana va limit. Ko’rsatuv va kliklar statistikasi.','Ad banners: text, link, image, dates and view limit. Views and clicks stats are shown.'],
+overview:['Сводка за выбранный день: кто пришёл, не пришёл, опоздал, отчёты и группы.','Tanlangan kun xulosasi: kelgan, kelmagan, kechikkan, hisobotlar.','Summary for the chosen day: present, absent, late, reports by group.'],
+dash:['График посещаемости за 7 дней, проблемные группы, активность преподавателей и история изменений.','7 kunlik davomat grafigi, muammoli guruhlar, o’qituvchilar faolligi, o’zgarishlar tarixi.','7-day attendance chart, at-risk groups, teacher activity and change history.'],
+req:['Заявки на пропуск: студент пишет причину и прикладывает файл, куратор или директор одобряет либо отклоняет.','Qoldirish arizalari: talaba sabab va fayl yuboradi, kurator yoki direktor tasdiqlaydi yoki rad etadi.','Absence requests: a student sends a reason and file, a curator or director approves or declines.'],
+staff:['Сотрудники: добавляйте, назначайте роли (учитель, куратор, зам.), группу куратору, блокируйте, сбрасывайте пароль. Группы создаются здесь же.','Xodimlar: qo’shing, rol bering, kuratorga guruh biriktiring, bloklang, parolni tiklang. Guruhlar ham shu yerda.','Staff: add people, set roles (teacher, curator, deputy), assign a group to a curator, block, reset password. Groups are created here too.'],
+sched:['Расписание групп по дням и парам: предмет, учитель, кабинет. Менять может директор.','Guruhlar jadvali: fan, o’qituvchi, xona. O’zgartirishni direktor qiladi.','Group timetable by day and lesson: subject, teacher, room. Only the director edits it.'],
+news:['Объявления и события техникума. Директор публикует, остальные читают.','Texnikum e’lonlari va tadbirlari. Direktor joylaydi, boshqalar o’qiydi.','College announcements and events. The director posts, everyone reads.'],
+prof:['Профиль: смена пароля и уведомления. Язык и тема — в шапке. Директор и админ видят журнал входов.','Profil: parolni almashtirish va bildirishnomalar. Til va mavzu tepada. Direktor va admin kirishlar jurnalini ko’radi.','Profile: change password and notifications. Language and theme are in the header. Director and admin see the login log.'],
+att:['Отметка посещаемости: выберите день в календаре и нажмите «Пришёл», «Не пришёл» или «Опоздал» у студента.','Davomat: kalendarda kunni tanlang va talaba yonida «Keldi», «Kelmadi» yoki «Kechikdi» ni bosing.','Attendance: pick a day in the calendar, then tap Present, Absent or Late next to a student.'],
+students:['Студенты вашей группы: добавьте нового с логином и паролем.','Guruhingiz talabalari: login va parol bilan yangisini qo’shing.','Your group’s students: add a new one with a login and password.'],
+report:['Напишите отчёт за день, выберите получателя (директор или зам.) и отправьте. Пустой отчёт не уйдёт.','Kunlik hisobot yozing, qabul qiluvchini tanlab yuboring. Bo’sh hisobot ketmaydi.','Write the day report, choose the recipient (director or deputy) and send. An empty report is not sent.'],
+grades:['Оценки: выберите студента и поставьте балл по своему предмету, комментарий по желанию.','Baholar: talabani tanlab, o’z faningiz bo’yicha ball qo’ying, izoh ixtiyoriy.','Grades: choose a student and give a mark for your subject, with an optional comment.'],
+mygrades:['Ваши оценки по предметам, средний балл и экспорт в Excel (CSV) или PDF.','Fanlar bo’yicha baholar, o’rtacha ball, Excel (CSV) yoki PDF eksport.','Your grades by subject, the average, and export to Excel (CSV) or PDF.'],
+myatt:['Ваша посещаемость в процентах и календарь: зелёный — пришли, красный — нет, жёлтый — опоздали.','Davomatingiz foizda va kalendar: yashil — keldi, qizil — kelmadi, sariq — kechikdi.','Your attendance in percent and a calendar: green present, red absent, yellow late.'],
+hw:['Домашние задания: учитель добавляет задание, студент видит срок и нажимает «Сдать».','Uy vazifalari: o’qituvchi qo’shadi, talaba muddatni ko’rib topshiradi.','Homework: teachers add tasks, students see the due date and submit.'],
+lib:['Материалы и тесты: файлы до 1,5 МБ и вопросы; результат теста попадает в оценки.','Materiallar va testlar: 1,5 MB gacha fayllar va savollar; test natijasi baholarga tushadi.','Materials and tests: files up to 1.5 MB and questions; test results become grades.'],
+chat:['Чат (кнопка справа внизу): комнаты по ролям и группам и личные сообщения («+»). Зелёная точка — в сети, иначе видно, когда был(а). Одна галочка — отправлено, две голубые — прочитано. Нажмите на сообщение, чтобы ответить, закрепить или удалить.','Chat: rol va guruh xonalari hamda shaxsiy xabarlar («+»). Yashil nuqta — onlayn, aks holda oxirgi kirish vaqti. Bitta belgi — yuborildi, ikkita ko’k — o’qildi. Javob, mahkamlash yoki o’chirish uchun xabarni bosing.','Chat: role and group rooms plus direct messages (+). Green dot = online, otherwise last seen. One check = sent, two blue = read. Tap a message to reply, pin or delete.']};
+const HOP={};
+function hint(){const nv=Q('main nav');if(!nv||!me||!HT[tab])return;const d=document.createElement('details');d.className='hp';d.open=!!HOP[tab];d.innerHTML=`<summary>${SV('help')}${TT[1][li()]}</summary><p>${E(HT[tab][li()])}</p>`;d.ontoggle=()=>{HOP[tab]=d.open};nv.after(d)}
+function helpOpen(){let m=Q('#hm');if(m){m.remove();return}m=document.createElement('div');m.id='hm';
+ const ks=[...new Set(['general',...(me?nav(me):[]),...(me&&me.role!='admin'?['chat']:[])])].filter(k=>HT[k]);
+ m.innerHTML=`<div class=hs><div class=hh><b>${SV('help')}${TT[0][li()]}</b><button aria-label=close>${SV('x',1)}</button></div><div class=hbd>${ks.map((k,i)=>`<details${i?'':' open'}><summary>${SV(k=='general'?'help':NK[k]||k)}${k=='general'?TT[0][li()]:t(k.replace('my',''))}</summary><p>${E(HT[k][li()])}</p></details>`).join('')}</div></div>`;
+ m.onclick=e=>{if(e.target==m||e.target.closest('.hh button'))m.remove()};document.body.append(m)}
+addEventListener('keydown',e=>{if(e.key=='Escape'){const m=Q('#hm');if(m)m.remove()}});
+function hb(){const r=Q('header .row');if(!r||Q('#hlp'))return;const b=document.createElement('button');b.id='hlp';b.setAttribute('aria-label','help');b.innerHTML=SV('help',1);b.onclick=helpOpen;const th=r.querySelector('button[onclick*="th()"]');th?th.before(b):r.append(b)}
+const PK='etp',pget=()=>{try{return JSON.parse(localStorage.getItem(PK))||{}}catch(e){return{}}},pset=p=>{try{localStorage.setItem(PK,JSON.stringify(p))}catch(e){}},
+onl=id=>Date.now()-(pget()[id]||0)<20000,
+beat=()=>{if(!me||document.hidden)return;const p=pget();p[me.id]=Date.now();pset(p)},
+away=()=>{if(!me)return;const p=pget();p[me.id]=Date.now()-20001;pset(p)},
+LT={on:['в сети','onlayn','online'],off:['не в сети','oflayn','offline'],seen:['был(а) ','oxirgi kirish: ','last seen '],now:['только что','hozirgina','just now'],ago:['мин назад','daqiqa oldin','min ago'],n:['в сети: ','onlayn: ','online: ']},
+seen=ts=>{if(!ts)return LT.seen[li()]+'—';const d=Date.now()-ts;let w;if(d<6e4)w=LT.now[li()];else if(d<36e5)w=Math.floor(d/6e4)+' '+LT.ago[li()];else{const x=new Date(ts);w=(ymd(x)==D?'':ymd(x).slice(5)+' ')+pad(x.getHours())+':'+pad(x.getMinutes())}return LT.seen[li()]+w},
+mem=r=>S.users.filter(u=>u.tech==me.tech&&(r=='c'?RS(u).includes('curator'):r=='d'?RS(u).some(x=>x=='director'||x=='deputy'):r=='t'?RS(u).includes('teacher'):u.group==r.slice(1)));
+function chatDeco(){const g=Q('#mg');if(!g||!me)return;
+ g.querySelectorAll('.mi').forEach(i=>{const m=/mgSel\('(p(\d+)-(\d+))'\)/.exec(i.getAttribute('onclick')||''),av=i.querySelector('.av');if(!av)return;const o0=av.querySelector('.od');if(o0)o0.remove();if(!m)return;const o=+m[2]==me.id?+m[3]:+m[2];if(onl(o))av.insertAdjacentHTML('beforeend','<u class=od></u>')});
+ if(!cr)return;
+ const hs=g.querySelector('.mc .mh small');
+ if(hs){if(hs.dataset.o===undefined)hs.dataset.o=hs.textContent;
+  if(cr[0]=='p'){const q=cr.slice(1).split('-').map(Number),o=q.find(x=>x!=me.id)||q[0],on=onl(o);hs.innerHTML=`<span class="ps${on?' on':''}"><u></u>${on?LT.on[li()]:LT.off[li()]+' · '+seen(pget()[o])}</span>`}
+  else hs.textContent=hs.dataset.o+' · '+LT.n[li()]+mem(cr).filter(u=>u.id==me.id||onl(u.id)).length}
+ const ms=rmsg(cr);g.querySelectorAll('.mc .bb.me').forEach(b=>{const all=[...g.querySelectorAll('.mc .bb')],m=ms[all.indexOf(b)],sm=b.querySelector('small');if(!m||!sm)return;const o=sm.querySelector('.rc');if(o)o.remove();
+  const n=Object.entries(S.rd).filter(([k,v])=>{const a=k.split('|');return a[1]==cr&&+a[0]!=me.id&&v>=m.id}).length;
+  sm.insertAdjacentHTML('beforeend',`<span class="rc${n?' rd':''}">${SV(n?'dcheck':'check',1)}${cr[0]!='p'&&n>1?n:''}</span>`)})}
+setInterval(()=>{beat();if(MO)chatDeco()},5000);
+addEventListener('storage',e=>{if(e.key==PK&&MO)chatDeco()});
+document.addEventListener('visibilitychange',()=>{document.hidden?away():beat()});addEventListener('pagehide',away);
+addEventListener('click',e=>{if(me&&e.target.closest&&e.target.closest('button[onclick*="me=null"]'))away()},true);
+
+window.eye=b=>{const i=b.previousElementSibling,sh=i.type=='password',a=i.selectionStart,z=i.selectionEnd;i.type=sh?'text':'password';b.innerHTML=SV(sh?'eyeoff':'eye',1);b.setAttribute('aria-label',t(sh?'hdp':'shw'));try{i.setSelectionRange(a,z)}catch(e){}};
+const FPT={t:['Забыли пароль?','Parolni unutdingizmi?','Forgot your password?'],p:['Пароль нельзя восстановить автоматически. Выполните три шага:','Parolni avtomatik tiklab bo’lmaydi. Uch qadamni bajaring:','The password cannot be recovered automatically. Follow three steps:'],
+s:[['Сообщите свой логин куратору или директору.','Они сбросят пароль и выдадут новый временный.','Войдите и смените его в разделе «Профиль».'],['Loginingizni kurator yoki direktorga ayting.','Ular parolni tiklab, yangi vaqtinchalik parol beradi.','Kiring va «Profil» bo’limida almashtiring.'],['Tell your curator or director your login.','They reset it and give you a new temporary password.','Sign in and change it in the Profile section.']]};
+window.fpOpen=()=>{const o=Q('#hm');if(o)o.remove();const m=document.createElement('div'),k=li();m.id='hm';
+ m.innerHTML=`<div class=hs><div class=hh><b>${SV('help')}${FPT.t[k]}</b><button aria-label=close>${SV('x',1)}</button></div><div class=hbd><p class=mu style="margin:0 0 10px">${FPT.p[k]}</p><ol class=fps>${FPT.s[k].map(x=>`<li>${x}</li>`).join('')}</ol><a href="${LK.sp}" target=_blank rel=noopener style="display:flex;align-items:center;justify-content:center;margin-top:14px;padding:10px;border-radius:9px;background:var(--pr);color:#fff;text-decoration:none;font-weight:600">${SV('chat')}${t('sup')}</a></div></div>`;
+ m.onclick=e=>{if(e.target==m||e.target.closest('.hh button'))m.remove()};document.body.append(m)};
+let idle=Date.now();['pointerdown','keydown','touchstart','scroll'].forEach(ev=>addEventListener(ev,()=>{idle=Date.now()},{passive:true,capture:true}));
+setInterval(()=>{if(me&&Date.now()-idle>9e5){away();me=null;draw();toast(t('idl'))}},15000);
+draw();
+})();
+</script></body></html>
